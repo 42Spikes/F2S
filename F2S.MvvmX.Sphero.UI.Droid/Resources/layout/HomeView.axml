@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:local="http://schemas.android.com/apk/res/F2S.MvvmX.Sphero.UI.Droid"
+    android:id="@+id/HomeView"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+    <Mvx.MvxListView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        local:MvxBind="ItemsSource AvailableSpheros;ItemClick SpheroSelectedCommand"
+        local:MvxItemTemplate="@layout/item_availablesphero" />
+</LinearLayout>

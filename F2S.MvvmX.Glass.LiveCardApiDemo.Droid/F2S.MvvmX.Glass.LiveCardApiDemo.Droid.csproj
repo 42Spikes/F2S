@@ -1,0 +1,224 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{513C40EC-75F5-4211-ACF5-0785B024E6BA}</ProjectGuid>
+    <ProjectTypeGuids>{EFBA0AD7-5A72-4C68-AF49-83D382785DCF};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>F2S.MvvmX.Glass.LiveCardApiDemo.Droid</RootNamespace>
+    <AssemblyName>F2S.MvvmX.Glass.LiveCardApiDemo.Droid</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <AndroidApplication>true</AndroidApplication>
+    <AndroidResgenFile>Resources\Resource.Designer.cs</AndroidResgenFile>
+    <GenerateSerializationAssemblies>Off</GenerateSerializationAssemblies>
+    <AndroidUseLatestPlatformSdk>True</AndroidUseLatestPlatformSdk>
+    <AndroidManifest>Properties\AndroidManifest.xml</AndroidManifest>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AndroidUseSharedRuntime>True</AndroidUseSharedRuntime>
+    <AndroidLinkMode>None</AndroidLinkMode>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AndroidUseSharedRuntime>False</AndroidUseSharedRuntime>
+    <AndroidLinkMode>SdkOnly</AndroidLinkMode>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Cirrious.CrossCore">
+      <HintPath>..\packages\MvvmCross.HotTuna.CrossCore.3.1.1\lib\MonoAndroid\Cirrious.CrossCore.dll</HintPath>
+    </Reference>
+    <Reference Include="Cirrious.CrossCore.Droid">
+      <HintPath>..\packages\MvvmCross.HotTuna.CrossCore.3.1.1\lib\MonoAndroid\Cirrious.CrossCore.Droid.dll</HintPath>
+    </Reference>
+    <Reference Include="Cirrious.MvvmCross">
+      <HintPath>..\packages\MvvmCross.HotTuna.MvvmCrossLibraries.3.1.1\lib\MonoAndroid\Cirrious.MvvmCross.dll</HintPath>
+    </Reference>
+    <Reference Include="Cirrious.MvvmCross.Binding">
+      <HintPath>..\packages\MvvmCross.HotTuna.CrossCore.3.1.1\lib\MonoAndroid\Cirrious.MvvmCross.Binding.dll</HintPath>
+    </Reference>
+    <Reference Include="Cirrious.MvvmCross.Binding.Droid">
+      <HintPath>..\packages\MvvmCross.HotTuna.CrossCore.3.1.1\lib\MonoAndroid\Cirrious.MvvmCross.Binding.Droid.dll</HintPath>
+    </Reference>
+    <Reference Include="Cirrious.MvvmCross.Droid">
+      <HintPath>..\packages\MvvmCross.HotTuna.MvvmCrossLibraries.3.1.1\lib\MonoAndroid\Cirrious.MvvmCross.Droid.dll</HintPath>
+    </Reference>
+    <Reference Include="Cirrious.MvvmCross.Localization">
+      <HintPath>..\packages\MvvmCross.HotTuna.CrossCore.3.1.1\lib\MonoAndroid\Cirrious.MvvmCross.Localization.dll</HintPath>
+    </Reference>
+    <Reference Include="Cirrious.MvvmCross.Plugins.Accelerometer">
+      <HintPath>..\packages\MvvmCross.HotTuna.Plugin.Accelerometer.3.1.1\lib\MonoAndroid\Cirrious.MvvmCross.Plugins.Accelerometer.dll</HintPath>
+    </Reference>
+    <Reference Include="Cirrious.MvvmCross.Plugins.Accelerometer.Droid">
+      <HintPath>..\packages\MvvmCross.HotTuna.Plugin.Accelerometer.3.1.1\lib\MonoAndroid\Cirrious.MvvmCross.Plugins.Accelerometer.Droid.dll</HintPath>
+    </Reference>
+    <Reference Include="Cirrious.MvvmCross.Plugins.Location">
+      <HintPath>..\packages\MvvmCross.HotTuna.Plugin.Location.3.1.1\lib\MonoAndroid\Cirrious.MvvmCross.Plugins.Location.dll</HintPath>
+    </Reference>
+    <Reference Include="Cirrious.MvvmCross.Plugins.Location.Droid">
+      <HintPath>..\packages\MvvmCross.HotTuna.Plugin.Location.3.1.1\lib\MonoAndroid\Cirrious.MvvmCross.Plugins.Location.Droid.dll</HintPath>
+    </Reference>
+    <Reference Include="Cirrious.MvvmCross.Plugins.Messenger">
+      <HintPath>..\packages\MvvmCross.HotTuna.Plugin.Messenger.3.1.1\lib\MonoAndroid\Cirrious.MvvmCross.Plugins.Messenger.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="GoogleGlassBindings">
+      <HintPath>..\Components\googleglass-1.8.1\lib\android\GoogleGlassBindings.dll</HintPath>
+    </Reference>
+    <Reference Include="Mono.Android" />
+    <Reference Include="mscorlib" />
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\packages\Newtonsoft.Json.6.0.3\lib\portable-net40+sl4+wp7+win8\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Net, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\MvvmCross.PortableSupport.3.1.1\lib\MonoAndroid\System.Net.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Windows, Version=2.0.5.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\MvvmCross.PortableSupport.3.1.1\lib\MonoAndroid\System.Windows.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Serialization, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\MvvmCross.PortableSupport.3.1.1\lib\MonoAndroid\System.Xml.Serialization.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Activities\CompassMenuActivity.cs" />
+    <Compile Include="Activities\DummyMenuActivity.cs" />
+    <Compile Include="ApiDemoApp.cs" />
+    <Compile Include="Bootstrap\AccelerometerPluginBootstrap.cs" />
+    <Compile Include="Bootstrap\CompassViewModelAnnotation.cs" />
+    <Compile Include="Bootstrap\LocationPluginBootstrap.cs" />
+    <Compile Include="Bootstrap\MessengerPluginBootstrap.cs" />
+    <Compile Include="Bootstrap\TextToSpeechPluginBootstrap.cs" />
+    <Compile Include="DebugTrace.cs" />
+    <Compile Include="DirectStartActivity.cs" />
+    <Compile Include="Framework\GlassMvxService.cs" />
+    <Compile Include="Framework\GlassMvxApp.cs" />
+    <Compile Include="Framework\GlassDirectRenderingCallbackTarget.cs" />
+    <Compile Include="Framework\GlassMvxStartActivity.cs" />
+    <Compile Include="Framework\ManagedCompositeService.cs" />
+    <Compile Include="Framework\GlassShowViewModelMessage.cs" />
+    <Compile Include="Framework\GlassViewModel.cs" />
+    <Compile Include="Framework\GlassViewModelAnnotator.cs" />
+    <Compile Include="Framework\ServiceRunner.cs" />
+    <Compile Include="LinkerPleaseInclude.cs" />
+    <Compile Include="Framework\LiveCardPresenter.cs" />
+    <Compile Include="Messages\ServiceDestroyedMessage.cs" />
+    <Compile Include="Messages\ServiceStartedMessage.cs" />
+    <Compile Include="Model\Compass\Landmarks.cs" />
+    <Compile Include="Model\Compass\Place.cs" />
+    <Compile Include="Resources\Resource.Designer.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Services\ComposableCompassService.cs" />
+    <Compile Include="Services\CompositeServiceRunner.cs" />
+    <Compile Include="Setup.cs" />
+    <Compile Include="Util\AndroidResourceReader.cs" />
+    <Compile Include="Util\MathUtils.cs" />
+    <Compile Include="Util\OnChangedListener.cs" />
+    <Compile Include="Util\DirectRenderingCallbackWrapper.cs" />
+    <Compile Include="Util\SensorExtensions.cs" />
+    <Compile Include="Views\Compass\CompassRenderer.cs" />
+    <Compile Include="Services\Compass\CompassService.cs" />
+    <Compile Include="Views\Compass\CompassView.cs" />
+    <Compile Include="Views\Compass\OrientationManager.cs" />
+    <Compile Include="Framework\LiveCardView.cs" />
+    <Compile Include="Views\MainView.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+    <None Include="Resources\AboutResources.txt" />
+    <None Include="Assets\AboutAssets.txt" />
+    <AndroidResource Include="Resources\layout\SplashScreen.axml" />
+    <AndroidResource Include="Resources\layout\FirstView.axml" />
+    <AndroidResource Include="Resources\layout\compass.axml">
+      <SubType>AndroidResource</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\raw\landmarks.json" />
+    <AndroidResource Include="Resources\layout\DummyCard.axml">
+      <SubType>AndroidResource</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\layout\ViewMapNotFound.axml">
+      <SubType>AndroidResource</SubType>
+    </AndroidResource>
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\values\Strings.xml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\Icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <TransformFile Include="Properties\AndroidManifest.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\values\SplashStyle.xml" />
+    <AndroidResource Include="Resources\values\MvxBindingAttributes.xml" />
+    <AndroidResource Include="Resources\drawable\splash.png" />
+    <AndroidResource Include="Resources\drawable\gradient50.png" />
+    <AndroidResource Include="Resources\drawable\ic_compass.png" />
+    <AndroidResource Include="Resources\drawable\ic_read_aloud.png" />
+    <AndroidResource Include="Resources\drawable\ic_stop.png" />
+    <AndroidResource Include="Resources\drawable\place_mark.png" />
+    <AndroidResource Include="Resources\menu\compass.xml" />
+    <AndroidResource Include="Resources\xml\voicetriggerstart.xml" />
+    <AndroidResource Include="Resources\values\dimens.xml" />
+    <AndroidResource Include="Resources\menu\DummyMenu.xml" />
+    <AndroidResource Include="Resources\values\styles.xml" />
+    <Content Include="ToDo-MvvmCross\_ Droid UI.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <XamarinComponentReference Include="googleglass">
+      <Visible>False</Visible>
+      <Version>1.8.1</Version>
+    </XamarinComponentReference>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\F2S.MvvmX.Glass.LiveCardApiDemo.Core\F2S.MvvmX.Glass.LiveCardApiDemo.Core.csproj">
+      <Project>{4b1aee33-1b0c-493c-93e2-470c54f356a8}</Project>
+      <Name>F2S.MvvmX.Glass.LiveCardApiDemo.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\F2S.MvvmX.Plugins.TextToSpeech.Droid\F2S.MvvmX.Plugins.TextToSpeech.Droid.csproj">
+      <Project>{8456161b-9c8a-43f6-b37f-491cf7f325e1}</Project>
+      <Name>F2S.MvvmX.Plugins.TextToSpeech.Droid</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\F2S.MvvmX.Plugins.TextToSpeech\F2S.MvvmX.Plugins.TextToSpeech.csproj">
+      <Project>{0c2b1a3c-1486-4d54-a2a4-e721e8d579f1}</Project>
+      <Name>F2S.MvvmX.Plugins.TextToSpeech</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Plugins\" />
+    <Folder Include="ViewModels\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+     Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
