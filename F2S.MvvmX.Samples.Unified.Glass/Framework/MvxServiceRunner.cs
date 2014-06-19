@@ -73,6 +73,5 @@ namespace F2S.MvvmX.Samples.Unified.Glass.Framework
 
             _service.OnDestroy();
         }
-
     }
 }

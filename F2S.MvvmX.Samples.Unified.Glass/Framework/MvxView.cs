@@ -16,6 +16,8 @@ namespace F2S.MvvmX.Samples.Unified.Glass.Framework
     public interface IMvxView
     {
         MvxViewModel ViewModel { get; set; }
+
+        void ViewModelSet();
     }
 
     public class MvxActivityView : Activity, IMvxView, IMvxNavigable
@@ -32,6 +34,39 @@ namespace F2S.MvvmX.Samples.Unified.Glass.Framework
         {
             throw new NotImplementedException();
         }
+
+        public virtual void ViewModelSet()
+        {
+        }
+    }
+
+    public class MvxActivityView<T> : MvxActivityView, IMvxView, IMvxNavigable
+    {
+        private MvxViewModel _viewModel;
+        public MvxViewModel ViewModel
+        {
+            get { return _viewModel; }
+            set
+            {
+                _viewModel = value;
+                ViewModelSet();
+            }
+        }
+
+        public MvxActivityView()
+        {
+            MvxApplication.CurrentContext = this;
+            MvxApplication.verify(this, typeof(T));
+        }
+
+        public void ShowViewModel<T>(object paramters = null)
+        {
+            throw new NotImplementedException();
+        }
+
+        public virtual void ViewModelSet()
+        {
+        }
     }
 
     public class MvxLiveCardView : LiveCard, IMvxView, IMvxNavigable
@@ -45,6 +80,11 @@ namespace F2S.MvvmX.Samples.Unified.Glass.Framework
         public void ShowViewModel<T>(object paramters = null)
         {
             throw new NotImplementedException();
+        }
+
+        public virtual void ViewModelSet()
+        {
+
         }
     }
 }

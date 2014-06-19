@@ -27,10 +27,6 @@ namespace F2S.MvvmX.Samples.Unified.Glass
 
             try
             {
-                StartService(
-                    new Intent(
-                        MvxApplication.CurrentContext,
-                        typeof (unifiedComposite)));
                 
             }
             catch (Exception ex)

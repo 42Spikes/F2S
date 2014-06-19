@@ -68,11 +68,11 @@ namespace F2S.MvvmX.Samples.Unified.Glass.Framework
         {
         }
 
-        public static void verify(IMvxView activity)
+        public static void verify(IMvxView view, Type viewModel = null)
         {
             if (_instance == null && !_initialized)
             {
-                Task.Factory.StartNew(() => startInitialization(true));
+                Task.Factory.StartNew(() => startInitialization(view, viewModel));
             }
         }
 
@@ -80,11 +80,11 @@ namespace F2S.MvvmX.Samples.Unified.Glass.Framework
         {
             if (_instance == null && !_initialized)
             {
-                Task.Factory.StartNew(() => startInitialization(false));
+                Task.Factory.StartNew(() => startInitialization());
             }
         }
 
-        public static void startInitialization(bool activityFirst = false)
+        public static void startInitialization(IMvxView view = null, Type viewModelType = null)
         {
             if (_initialized) return;
 
@@ -118,6 +118,13 @@ namespace F2S.MvvmX.Samples.Unified.Glass.Framework
                 {
                     _initializationCompletion.SetResult(_instance);
                     _instance.InitializationComplete();
+
+
+                    if (viewModelType != null && view != null)
+                    {
+                        var vm = Activator.CreateInstance(viewModelType) as MvxViewModel;
+                        view.ViewModel = vm;
+                    }
                 }
             }
         }

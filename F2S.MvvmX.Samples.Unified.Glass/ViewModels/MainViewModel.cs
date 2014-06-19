@@ -13,7 +13,7 @@ using F2S.MvvmX.Samples.Unified.Glass.Framework;
 
 namespace F2S.MvvmX.Samples.Unified.Glass.ViewModels
 {
-    public class MainActivityViewModel : MvxViewModel
+    public class MainViewModel : MvxViewModel
     {
     }
 }

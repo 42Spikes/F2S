@@ -54,8 +54,9 @@
     <Compile Include="Components\Compass\Services\ComposableCompassService.cs" />
     <Compile Include="Framework\IMvxNavigable.cs" />
     <Compile Include="Framework\MvxServiceRunner.cs" />
+    <Compile Include="Framework\MvxStartActivityAttribute.cs" />
     <Compile Include="Framework\ViewFirstAttribute.cs" />
-    <Compile Include="ViewModels\MainActivityViewModel.cs" />
+    <Compile Include="ViewModels\MainViewModel.cs" />
     <Compile Include="Views\MainActivityView.cs" />
     <Compile Include="App.cs" />
     <Compile Include="Components\Compass\ViewModels\CompassViewModel.cs" />
