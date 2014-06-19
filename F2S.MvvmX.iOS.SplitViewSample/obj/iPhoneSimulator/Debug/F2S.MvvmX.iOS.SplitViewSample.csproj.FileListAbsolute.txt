@@ -1,0 +1,15 @@
+Y:\Dev\Projects\F2S\F2S.MvvmX.iOS.SplitViewSample\bin\iPhoneSimulator\Debug\F2SMvvmXiOSSplitViewSample.exe
+Y:\Dev\Projects\F2S\F2S.MvvmX.iOS.SplitViewSample\bin\iPhoneSimulator\Debug\F2SMvvmXiOSSplitViewSample.pdb
+Y:\Dev\Projects\F2S\F2S.MvvmX.iOS.SplitViewSample\bin\iPhoneSimulator\Debug\Cirrious.CrossCore.dll
+Y:\Dev\Projects\F2S\F2S.MvvmX.iOS.SplitViewSample\bin\iPhoneSimulator\Debug\Cirrious.CrossCore.Touch.dll
+Y:\Dev\Projects\F2S\F2S.MvvmX.iOS.SplitViewSample\bin\iPhoneSimulator\Debug\Cirrious.MvvmCross.Binding.dll
+Y:\Dev\Projects\F2S\F2S.MvvmX.iOS.SplitViewSample\bin\iPhoneSimulator\Debug\Cirrious.MvvmCross.Binding.Touch.dll
+Y:\Dev\Projects\F2S\F2S.MvvmX.iOS.SplitViewSample\bin\iPhoneSimulator\Debug\Cirrious.MvvmCross.dll
+Y:\Dev\Projects\F2S\F2S.MvvmX.iOS.SplitViewSample\bin\iPhoneSimulator\Debug\Cirrious.MvvmCross.Localization.dll
+Y:\Dev\Projects\F2S\F2S.MvvmX.iOS.SplitViewSample\bin\iPhoneSimulator\Debug\Cirrious.MvvmCross.Touch.dll
+Y:\Dev\Projects\F2S\F2S.MvvmX.iOS.SplitViewSample\bin\iPhoneSimulator\Debug\F2S.MvvmX.iOS.SplitView.Core.dll
+Y:\Dev\Projects\F2S\F2S.MvvmX.iOS.SplitViewSample\bin\iPhoneSimulator\Debug\F2S.MvvmX.iOS.SplitView.Core.pdb
+Y:\Dev\Projects\F2S\F2S.MvvmX.iOS.SplitViewSample\bin\iPhoneSimulator\Debug\F2S.MvvmX.iOS.SplitView.Core.dll.mdb
+Y:\Dev\Projects\F2S\F2S.MvvmX.iOS.SplitViewSample\obj\iPhoneSimulator\Debug\F2S.MvvmX.iOS.SplitViewSample.csprojResolveAssemblyReference.cache
+Y:\Dev\Projects\F2S\F2S.MvvmX.iOS.SplitViewSample\obj\iPhoneSimulator\Debug\F2SMvvmXiOSSplitViewSample.exe
+Y:\Dev\Projects\F2S\F2S.MvvmX.iOS.SplitViewSample\obj\iPhoneSimulator\Debug\F2SMvvmXiOSSplitViewSample.pdb

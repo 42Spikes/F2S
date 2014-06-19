@@ -1,0 +1,3 @@
+Y:\Dev\Projects\F2S\F2S.MvvmX.Glass.Compass.Droid\bin\Debug\F2S.MvvmX.Glass.Compass.Droid.dll
+Y:\Dev\Projects\F2S\Components\googleglass-1.7.1\lib\android\GoogleGlassBindings.dll
+Y:\Dev\Projects\F2S\packages\Newtonsoft.Json.6.0.3\lib\portable-net40+sl4+wp7+win8\Newtonsoft.Json.dll

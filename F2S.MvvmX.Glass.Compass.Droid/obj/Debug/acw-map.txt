@@ -1,0 +1,12 @@
+F2S.MvvmX.Glass.Compass.Droid.CompassMenuActivity;f2s.mvvmx.glass.compass.droid.CompassMenuActivity
+F2S.MvvmX.Glass.Compass.Droid.OrientationManager;f2s.mvvmx.glass.compass.droid.OrientationManager
+F2S.MvvmX.Glass.Compass.Droid.CompassService;f2s.mvvmx.glass.compass.droid.CompassService
+F2S.MvvmX.Glass.Compass.Droid.CompassService.CompassBinder;f2s.mvvmx.glass.compass.droid.CompassService_CompassBinder
+F2S.MvvmX.Glass.Compass.Droid.CompassView;f2s.mvvmx.glass.compass.droid.CompassView
+F2S.MvvmX.Glass.Compass.Droid.DirectStartActivity;f2s.mvvmx.glass.compass.droid.DirectStartActivity
+F2S.MvvmX.Glass.Compass.Droid.Util.OnChangedListener;f2s.mvvmx.glass.compass.droid.util.OnChangedListener
+F2S.MvvmX.Glass.Compass.Droid.Util.RenderingCallbackWrapper;f2s.mvvmx.glass.compass.droid.util.RenderingCallbackWrapper
+Android.Glass.Touchpad.GestureDetector.IBaseListenerImplementor;mono.com.google.android.glass.touchpad.GestureDetector_BaseListenerImplementor
+Android.Glass.Touchpad.GestureDetector.IFingerListenerImplementor;mono.com.google.android.glass.touchpad.GestureDetector_FingerListenerImplementor
+Android.Glass.Touchpad.GestureDetector.IScrollListenerImplementor;mono.com.google.android.glass.touchpad.GestureDetector_ScrollListenerImplementor
+Android.Glass.Touchpad.GestureDetector.ITwoFingerScrollListenerImplementor;mono.com.google.android.glass.touchpad.GestureDetector_TwoFingerScrollListenerImplementor

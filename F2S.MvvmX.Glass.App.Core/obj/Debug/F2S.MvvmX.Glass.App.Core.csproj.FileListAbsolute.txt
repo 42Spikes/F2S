@@ -1,0 +1,8 @@
+Y:\Dev\Projects\F2S\F2S.MvvmX.Glass.App.Core\bin\Debug\F2S.MvvmX.Glass.App.Core.dll
+Y:\Dev\Projects\F2S\F2S.MvvmX.Glass.App.Core\bin\Debug\F2S.MvvmX.Glass.App.Core.pdb
+Y:\Dev\Projects\F2S\F2S.MvvmX.Glass.App.Core\bin\Debug\Cirrious.CrossCore.dll
+Y:\Dev\Projects\F2S\F2S.MvvmX.Glass.App.Core\bin\Debug\Cirrious.MvvmCross.dll
+Y:\Dev\Projects\F2S\F2S.MvvmX.Glass.App.Core\bin\Debug\Cirrious.MvvmCross.Localization.dll
+Y:\Dev\Projects\F2S\F2S.MvvmX.Glass.App.Core\obj\Debug\F2S.MvvmX.Glass.App.Core.csprojResolveAssemblyReference.cache
+Y:\Dev\Projects\F2S\F2S.MvvmX.Glass.App.Core\obj\Debug\F2S.MvvmX.Glass.App.Core.dll
+Y:\Dev\Projects\F2S\F2S.MvvmX.Glass.App.Core\obj\Debug\F2S.MvvmX.Glass.App.Core.pdb

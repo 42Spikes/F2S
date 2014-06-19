@@ -1,0 +1,2 @@
+Y:\Dev\Projects\F2S\F2S.MvvmX.Samples.Unified.Glass\bin\Debug\F2S.MvvmX.Samples.Unified.Glass.dll
+Y:\Dev\Projects\F2S\Components\googleglass-1.8.1\lib\android\GoogleGlassBindings.dll

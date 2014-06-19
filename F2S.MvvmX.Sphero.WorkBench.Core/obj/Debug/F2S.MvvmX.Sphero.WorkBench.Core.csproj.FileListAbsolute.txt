@@ -1,0 +1,1 @@
+Y:\Dev\Projects\F2S\F2S.MvvmX.Sphero.WorkBench.Core\obj\Debug\F2S.MvvmX.Sphero.WorkBench.Core.csprojResolveAssemblyReference.cache

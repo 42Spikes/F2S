@@ -1,0 +1,10 @@
+Y:\Dev\Projects\F2S\F2S.MvvmX.Sphero.UI.Core\bin\Debug\F2S.MvvmX.Sphero.UI.Core.dll
+Y:\Dev\Projects\F2S\F2S.MvvmX.Sphero.UI.Core\bin\Debug\F2S.MvvmX.Sphero.UI.Core.pdb
+Y:\Dev\Projects\F2S\F2S.MvvmX.Sphero.UI.Core\bin\Debug\Cirrious.CrossCore.dll
+Y:\Dev\Projects\F2S\F2S.MvvmX.Sphero.UI.Core\bin\Debug\Cirrious.MvvmCross.dll
+Y:\Dev\Projects\F2S\F2S.MvvmX.Sphero.UI.Core\bin\Debug\Cirrious.MvvmCross.Localization.dll
+Y:\Dev\Projects\F2S\F2S.MvvmX.Sphero.UI.Core\bin\Debug\F2S.MvvmX.Plugins.Sphero.dll
+Y:\Dev\Projects\F2S\F2S.MvvmX.Sphero.UI.Core\bin\Debug\F2S.MvvmX.Plugins.Sphero.pdb
+Y:\Dev\Projects\F2S\F2S.MvvmX.Sphero.UI.Core\obj\Debug\F2S.MvvmX.Sphero.UI.Core.csprojResolveAssemblyReference.cache
+Y:\Dev\Projects\F2S\F2S.MvvmX.Sphero.UI.Core\obj\Debug\F2S.MvvmX.Sphero.UI.Core.dll
+Y:\Dev\Projects\F2S\F2S.MvvmX.Sphero.UI.Core\obj\Debug\F2S.MvvmX.Sphero.UI.Core.pdb

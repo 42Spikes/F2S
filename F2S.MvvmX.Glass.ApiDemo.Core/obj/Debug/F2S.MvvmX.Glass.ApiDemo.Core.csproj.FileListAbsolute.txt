@@ -1,0 +1,16 @@
+X:\Dev\Projects\F2S\F2S.MvvmX.Glass.ApiDemo.Core\bin\Debug\F2S.MvvmX.Glass.ApiDemo.Core.dll
+X:\Dev\Projects\F2S\F2S.MvvmX.Glass.ApiDemo.Core\bin\Debug\F2S.MvvmX.Glass.ApiDemo.Core.pdb
+X:\Dev\Projects\F2S\F2S.MvvmX.Glass.ApiDemo.Core\bin\Debug\Cirrious.CrossCore.dll
+X:\Dev\Projects\F2S\F2S.MvvmX.Glass.ApiDemo.Core\bin\Debug\Cirrious.MvvmCross.dll
+X:\Dev\Projects\F2S\F2S.MvvmX.Glass.ApiDemo.Core\bin\Debug\Cirrious.MvvmCross.Localization.dll
+X:\Dev\Projects\F2S\F2S.MvvmX.Glass.ApiDemo.Core\obj\Debug\F2S.MvvmX.Glass.ApiDemo.Core.dll
+X:\Dev\Projects\F2S\F2S.MvvmX.Glass.ApiDemo.Core\obj\Debug\F2S.MvvmX.Glass.ApiDemo.Core.pdb
+X:\Dev\Projects\F2S\F2S.MvvmX.Glass.ApiDemo.Core\obj\Debug\F2S.MvvmX.Glass.ApiDemo.Core.csprojResolveAssemblyReference.cache
+Y:\Dev\Projects\F2S\F2S.MvvmX.Glass.ApiDemo.Core\bin\Debug\F2S.MvvmX.Glass.ApiDemo.Core.dll
+Y:\Dev\Projects\F2S\F2S.MvvmX.Glass.ApiDemo.Core\bin\Debug\F2S.MvvmX.Glass.ApiDemo.Core.pdb
+Y:\Dev\Projects\F2S\F2S.MvvmX.Glass.ApiDemo.Core\bin\Debug\Cirrious.CrossCore.dll
+Y:\Dev\Projects\F2S\F2S.MvvmX.Glass.ApiDemo.Core\bin\Debug\Cirrious.MvvmCross.dll
+Y:\Dev\Projects\F2S\F2S.MvvmX.Glass.ApiDemo.Core\bin\Debug\Cirrious.MvvmCross.Localization.dll
+Y:\Dev\Projects\F2S\F2S.MvvmX.Glass.ApiDemo.Core\obj\Debug\F2S.MvvmX.Glass.ApiDemo.Core.csprojResolveAssemblyReference.cache
+Y:\Dev\Projects\F2S\F2S.MvvmX.Glass.ApiDemo.Core\obj\Debug\F2S.MvvmX.Glass.ApiDemo.Core.dll
+Y:\Dev\Projects\F2S\F2S.MvvmX.Glass.ApiDemo.Core\obj\Debug\F2S.MvvmX.Glass.ApiDemo.Core.pdb

@@ -1,0 +1,11 @@
+orbotix.macro.MacroObject$MacroObjectMode:Orbotix.Macro:MacroObject.MacroObjectMode
+orbotix.macro.RawMotor$DriveMode:Orbotix.Macro:RawMotor.DriveMode
+orbotix.robot.base.DeviceAsyncData$Type:Orbotix.Robot.Base:DeviceAsyncData.Type
+orbotix.robot.internal.DeviceResponse$ResponseCode:Orbotix.Robot.Internal:DeviceResponse.ResponseCode
+orbotix.sphero.CollisionControl$Method:Orbotix.Sphero:CollisionControl.Method
+orbotix.sphero.NonPersistentOptionFlags:Orbotix.Sphero:NonPersistentOptionFlags
+orbotix.sphero.PersistentOptionFlags:Orbotix.Sphero:PersistentOptionFlags
+orbotix.sphero.SensorFlag:Orbotix.Sphero:SensorFlag
+orbotix.view.calibration.CalibrationButtonView$CalibrationCircleLocation:Orbotix.View.Calibration:CalibrationButtonView.CalibrationCircleLocation
+orbotix.view.calibration.CalibrationView$CalibrationCircleLocation:Orbotix.View.Calibration:CalibrationView.CalibrationCircleLocation
+orbotix.view.connection.SpheroConnectionView$ConnectionState:Orbotix.View.Connection:SpheroConnectionView.ConnectionState

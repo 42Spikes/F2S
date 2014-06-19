@@ -1,0 +1,5 @@
+Y:\Dev\Projects\F2S\F2S.MvvmX.Plugins.Compass\bin\Debug\F2S.MvvmX.Plugins.Compass.dll
+Y:\Dev\Projects\F2S\F2S.MvvmX.Plugins.Compass\bin\Debug\F2S.MvvmX.Plugins.Compass.pdb
+Y:\Dev\Projects\F2S\F2S.MvvmX.Plugins.Compass\obj\Debug\F2S.MvvmX.Plugins.Compass.csprojResolveAssemblyReference.cache
+Y:\Dev\Projects\F2S\F2S.MvvmX.Plugins.Compass\obj\Debug\F2S.MvvmX.Plugins.Compass.dll
+Y:\Dev\Projects\F2S\F2S.MvvmX.Plugins.Compass\obj\Debug\F2S.MvvmX.Plugins.Compass.pdb

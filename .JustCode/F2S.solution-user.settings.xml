@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<JustCodeSettings Version="0.0" Timestamp="4e72107f-12cb-40b3-8b95-85a760725dc5">
+  <IgnoredErrorsAndWarningsSettings xmlns:i="http://www.w3.org/2001/XMLSchema-instance">
+    <IgnoredErrorsAndWarnings Version="2">
+      <FilePath>
+        <FileRelativePath>F2S.MvvmX.iOS.SplitView.Core/ViewModels/FirstViewModel.cs</FileRelativePath>
+        <ProjectRelativePath>F2S.MvvmX.iOS.SplitView.Core/F2S.MvvmX.iOS.SplitView.Core.csproj</ProjectRelativePath>
+        <IgnoredElement>
+          <TextualIdentifier>16632880047249333874</TextualIdentifier>
+        </IgnoredElement>
+        <IgnoredElement>
+          <TextualIdentifier>12457748217234043086</TextualIdentifier>
+        </IgnoredElement>
+        <IgnoredElement>
+          <TextualIdentifier>3995978218197194008</TextualIdentifier>
+        </IgnoredElement>
+        <IgnoredElement>
+          <TextualIdentifier>12486219501113405599</TextualIdentifier>
+        </IgnoredElement>
+        <IgnoredElement>
+          <TextualIdentifier>10535628811974056140</TextualIdentifier>
+        </IgnoredElement>
+        <IgnoredElement>
+          <TextualIdentifier>14456202122714908761</TextualIdentifier>
+        </IgnoredElement>
+        <IgnoredElement>
+          <TextualIdentifier>10711181516159375907</TextualIdentifier>
+        </IgnoredElement>
+      </FilePath>
+      <FilePath>
+        <FileRelativePath>F2S.MvvmX.iOS.SplitView.Core/App.cs</FileRelativePath>
+        <ProjectRelativePath>F2S.MvvmX.iOS.SplitView.Core/F2S.MvvmX.iOS.SplitView.Core.csproj</ProjectRelativePath>
+        <IgnoredElement>
+          <TextualIdentifier>2032778086241534600</TextualIdentifier>
+        </IgnoredElement>
+      </FilePath>
+      <FilePath>
+        <FileRelativePath>F2S.MvvmX.Glass.ApiDemo.Core/ViewModels/MvxStaticCardViewModel.cs</FileRelativePath>
+        <ProjectRelativePath>F2S.MvvmX.Glass.ApiDemo.Core/F2S.MvvmX.Glass.ApiDemo.Core.csproj</ProjectRelativePath>
+        <IgnoredElement>
+          <TextualIdentifier>3475340081457492816</TextualIdentifier>
+        </IgnoredElement>
+      </FilePath>
+      <FilePath>
+        <FileRelativePath>F2S.MvvmX.Glass.ApiDemo.Core/ViewModels/MainViewModel.cs</FileRelativePath>
+        <ProjectRelativePath>F2S.MvvmX.Glass.ApiDemo.Core/F2S.MvvmX.Glass.ApiDemo.Core.csproj</ProjectRelativePath>
+        <IgnoredElement>
+          <TextualIdentifier>14058479777736471015</TextualIdentifier>
+        </IgnoredElement>
+      </FilePath>
+    </IgnoredErrorsAndWarnings>
+  </IgnoredErrorsAndWarningsSettings>
+</JustCodeSettings>

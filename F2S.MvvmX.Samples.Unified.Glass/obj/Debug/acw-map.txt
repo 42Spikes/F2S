@@ -1,0 +1,12 @@
+F2S.MvvmX.Samples.Unified.Glass.Framework.MvxService;f2s.mvvmx.samples.unified.glass.framework.MvxService
+F2S.MvvmX.Samples.Unified.Glass.Framework.MvxServiceRunner;f2s.mvvmx.samples.unified.glass.framework.MvxServiceRunner
+F2S.MvvmX.Samples.Unified.Glass.Framework.MvxServiceRunner`1;f2s.mvvmx.samples.unified.glass.framework.MvxServiceRunner_1
+F2S.MvvmX.Samples.Unified.Glass.Framework.MvxActivityView;f2s.mvvmx.samples.unified.glass.framework.MvxActivityView
+F2S.MvvmX.Samples.Unified.Glass.Activities.MainActivity;f2s.mvvmx.samples.unified.glass.activities.MainActivity
+F2S.MvvmX.Samples.Unified.Glass.unifiedComposite;f2s.mvvmx.samples.unified.glass.unifiedComposite
+F2S.MvvmX.Samples.Unified.Glass.Framework.MvxLiveCardView;f2s.mvvmx.samples.unified.glass.framework.MvxLiveCardView
+F2S.MvvmX.Samples.Unified.Glass.Components.Compass.Views.CompassView;f2s.mvvmx.samples.unified.glass.components.compass.views.CompassView
+Android.Glass.Touchpad.GestureDetector.IBaseListenerImplementor;mono.com.google.android.glass.touchpad.GestureDetector_BaseListenerImplementor
+Android.Glass.Touchpad.GestureDetector.IFingerListenerImplementor;mono.com.google.android.glass.touchpad.GestureDetector_FingerListenerImplementor
+Android.Glass.Touchpad.GestureDetector.IScrollListenerImplementor;mono.com.google.android.glass.touchpad.GestureDetector_ScrollListenerImplementor
+Android.Glass.Touchpad.GestureDetector.ITwoFingerScrollListenerImplementor;mono.com.google.android.glass.touchpad.GestureDetector_TwoFingerScrollListenerImplementor

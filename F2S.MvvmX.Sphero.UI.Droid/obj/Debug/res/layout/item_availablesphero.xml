@@ -1,0 +1,1 @@
+<TextView android:id="@+id/availableSpheroId" android:layout_width="fill_parent" android:layout_height="wrap_content" android:padding="20dp" local:MvxBind="Text Name" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:local="http://schemas.android.com/apk/res/F2S.MvvmX.Sphero.UI.Droid" />

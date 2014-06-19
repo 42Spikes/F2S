@@ -1,0 +1,8 @@
+Y:\Dev\Projects\F2S\F2S.MvvmX.Plugins.TextToSpeech\bin\Debug\F2S.MvvmX.Plugins.TextToSpeech.dll
+Y:\Dev\Projects\F2S\F2S.MvvmX.Plugins.TextToSpeech\bin\Debug\F2S.MvvmX.Plugins.TextToSpeech.pdb
+Y:\Dev\Projects\F2S\F2S.MvvmX.Plugins.TextToSpeech\bin\Debug\Cirrious.CrossCore.dll
+Y:\Dev\Projects\F2S\F2S.MvvmX.Plugins.TextToSpeech\bin\Debug\Cirrious.MvvmCross.dll
+Y:\Dev\Projects\F2S\F2S.MvvmX.Plugins.TextToSpeech\bin\Debug\Cirrious.MvvmCross.Localization.dll
+Y:\Dev\Projects\F2S\F2S.MvvmX.Plugins.TextToSpeech\obj\Debug\F2S.MvvmX.Plugins.TextToSpeech.csprojResolveAssemblyReference.cache
+Y:\Dev\Projects\F2S\F2S.MvvmX.Plugins.TextToSpeech\obj\Debug\F2S.MvvmX.Plugins.TextToSpeech.dll
+Y:\Dev\Projects\F2S\F2S.MvvmX.Plugins.TextToSpeech\obj\Debug\F2S.MvvmX.Plugins.TextToSpeech.pdb
