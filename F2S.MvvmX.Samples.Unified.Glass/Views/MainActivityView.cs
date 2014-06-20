@@ -11,14 +11,15 @@ using Android.Views;
 using Android.Widget;
 using F2S.MvvmX.Samples.Unified.Glass.Components.Compass.Services;
 using F2S.MvvmX.Samples.Unified.Glass.Framework;
+using F2S.MvvmX.Samples.Unified.Glass.Services;
 using F2S.MvvmX.Samples.Unified.Glass.ViewModels;
 
 namespace F2S.MvvmX.Samples.Unified.Glass.Activities
 {
-    [Activity(Label = "Immersive Glass Example", MainLauncher = true, Icon = "@drawable/icon")]
-    [IntentFilter(new[] { "com.google.android.glass.action.VOICE_TRIGGER" })]
-    [MetaData("com.google.android.glass.VoiceTrigger", Resource = "@xml/voicetriggerstart")]
-    [MvxStartActivity]
+    [Activity(Label = "Immersive Glass Example", MainLauncher = true, Icon = "@drawable/icon", NoHistory=true)]
+    //[IntentFilter(new[] { "com.google.android.glass.action.VOICE_TRIGGER" })]
+    //[MetaData("com.google.android.glass.VoiceTrigger", Resource = "@xml/voicetriggerstart")]
+    //[MvxStartActivity]
 
     public class MainActivity : MvxActivityView<MainViewModel>
     {
@@ -30,10 +31,12 @@ namespace F2S.MvvmX.Samples.Unified.Glass.Activities
         {
             base.OnCreate(savedInstanceState);
 
+            /*
             StartService(
                 new Intent(
                     MvxApplication.CurrentContext,
-                    typeof (unifiedComposite)));
+                    typeof (UnifiedCompositeService)));
+             * */
         }
 
         protected override void OnDestroy()

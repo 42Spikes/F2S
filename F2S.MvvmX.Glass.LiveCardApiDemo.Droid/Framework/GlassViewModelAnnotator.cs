@@ -37,7 +37,6 @@ namespace F2S.MvvmX.Glass.LiveCardApiDemo.Droid.Framework
         {
             GlassViewModelAnnotator.init();
         }
-
     }
 
     public class DirectRenderingViewModelAnnotator<T, R>

@@ -28,17 +28,21 @@ namespace F2S.MvvmX.Samples.Unified.Glass.Framework
 
     public abstract class MvxApplication : IMvxApplication
     {
+        protected Context _context;
         public static Context CurrentContext { get; set; }
-
-        protected static MvxApplication _instance;
 
         protected static TinyIoCContainer _container = new TinyIoCContainer();
         public static TinyIoCContainer Container { get { return _container; } }
 
+        protected static MvxApplication _instance;
         public static MvxApplication Instance
         {
             get { return _instance; }
         }
+
+        protected List<IMvxService> _runningServices = new List<IMvxService>();
+        public List<IMvxService> RunningServices { get { return _runningServices; } }
+
 
         protected static bool _initialized = false;
         public bool IsInitialized { get { return _initialized; } }
@@ -80,8 +84,22 @@ namespace F2S.MvvmX.Samples.Unified.Glass.Framework
         {
             if (_instance == null && !_initialized)
             {
-                Task.Factory.StartNew(() => startInitialization());
+                Task.Factory.StartNew(() => startInitialization()).ContinueWith(_ => _instance.track(service));
             }
+            else
+            {
+                _instance.track(service);
+            }
+        }
+
+        private void track(IMvxService service)
+        {
+            _runningServices.Add(service);
+        }
+
+        public void untrack(IMvxService service)
+        {
+            _runningServices.Remove(service);
         }
 
         public static void startInitialization(IMvxView view = null, Type viewModelType = null)
@@ -119,12 +137,13 @@ namespace F2S.MvvmX.Samples.Unified.Glass.Framework
                     _initializationCompletion.SetResult(_instance);
                     _instance.InitializationComplete();
 
-
+                    /*
                     if (viewModelType != null && view != null)
                     {
                         var vm = Activator.CreateInstance(viewModelType) as MvxViewModel;
                         view.ViewModel = vm;
                     }
+                     * */
                 }
             }
         }
@@ -133,7 +152,20 @@ namespace F2S.MvvmX.Samples.Unified.Glass.Framework
         {
             try
             {
-                CurrentContext.StartService(intent);
+                (CurrentContext ?? Application.Context).StartService(intent);
+            }
+            catch (Exception ex)
+            {
+            }
+        }
+
+        public void StartService<T>(Context context = null) where T : IMvxService
+        {
+            var ctx = context ?? CurrentContext ?? Application.Context;
+
+            try
+            {
+                StartService(new Intent(ctx, typeof(T)));
             }
             catch (Exception ex)
             {
@@ -145,7 +177,10 @@ namespace F2S.MvvmX.Samples.Unified.Glass.Framework
         }
     }
 
-    public abstract class MvxApplication<Presenter> : MvxApplication where Presenter : IMvxPresenter
+    public abstract class MvxApplication<Presenter, TheService> : 
+        MvxApplication 
+            where Presenter : IMvxPresenter
+            where TheService : IMvxService
     {
         static MvxApplication()
         {
@@ -163,11 +198,35 @@ namespace F2S.MvvmX.Samples.Unified.Glass.Framework
         public override void Initialize()
         {
             performInitialization();
+            startServices();
+            doInitialNavigation();
         }
 
         protected virtual void performInitialization()
         {
+            createMessenger(); // must go before presenter
+            createPresenter();
+
+        }
+
+        protected virtual void createPresenter()
+        {
             Mvx.Register<IMvxPresenter>(Activator.CreateInstance<Presenter>());
+        }
+
+        protected virtual void createMessenger()
+        {
+            Mvx.Register<IMvxMessenger>(new MvxMessenger());
+        }
+
+        protected virtual void startServices()
+        {
+            StartService<TheService>();
+        }
+
+        protected virtual void doInitialNavigation()
+        {
+
         }
     }
 }

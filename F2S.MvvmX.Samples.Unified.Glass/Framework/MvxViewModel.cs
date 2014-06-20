@@ -22,7 +22,7 @@ namespace F2S.MvvmX.Samples.Unified.Glass.Framework
         public void ShowViewModel<T>(object parameters = null)
         {
             var presenter = Mvx.Resolve<IMvxPresenter>();
-            presenter.ShowViewModel<T>();
+            presenter.ShowViewModel<T>(this);
         }
     }
 }

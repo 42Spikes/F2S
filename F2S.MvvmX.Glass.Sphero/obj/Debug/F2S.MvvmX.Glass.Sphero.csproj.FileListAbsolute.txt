@@ -11,3 +11,16 @@ Y:\Dev\Projects\F2S\F2S.MvvmX.Glass.Sphero\obj\Debug\res\values\strings.xml
 Y:\Dev\Projects\F2S\F2S.MvvmX.Glass.Sphero\obj\Debug\res\drawable\icon.png
 Y:\Dev\Projects\F2S\F2S.MvvmX.Glass.Sphero\obj\Debug\R.cs.flag
 Y:\Dev\Projects\F2S\F2S.MvvmX.Glass.Sphero\obj\Debug\uploadflags.txt
+D:\F2S\F2S.MvvmX.Glass.Sphero\bin\Debug\F2S.MvvmX.Glass.Sphero.dll
+D:\F2S\F2S.MvvmX.Glass.Sphero\bin\Debug\F2S.MvvmX.Glass.Sphero.pdb
+D:\F2S\F2S.MvvmX.Glass.Sphero\bin\Debug\F2S.MvvmX.Glass.Sphero.dll.mdb
+D:\F2S\F2S.MvvmX.Glass.Sphero\bin\Debug\F2S.MvvmX.Glass.Sphero.apk
+D:\F2S\F2S.MvvmX.Glass.Sphero\bin\Debug\F2S.MvvmX.Glass.Sphero-Signed.apk
+D:\F2S\F2S.MvvmX.Glass.Sphero\obj\Debug\F2S.MvvmX.Glass.Sphero.dll
+D:\F2S\F2S.MvvmX.Glass.Sphero\obj\Debug\F2S.MvvmX.Glass.Sphero.pdb
+D:\F2S\F2S.MvvmX.Glass.Sphero\obj\Debug\android\bin\F2S.MvvmX.Glass.Sphero.apk
+D:\F2S\F2S.MvvmX.Glass.Sphero\obj\Debug\res\layout\main.xml
+D:\F2S\F2S.MvvmX.Glass.Sphero\obj\Debug\res\values\strings.xml
+D:\F2S\F2S.MvvmX.Glass.Sphero\obj\Debug\res\drawable\icon.png
+D:\F2S\F2S.MvvmX.Glass.Sphero\obj\Debug\R.cs.flag
+D:\F2S\F2S.MvvmX.Glass.Sphero\obj\Debug\uploadflags.txt

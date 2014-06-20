@@ -12,7 +12,7 @@ using Android.Widget;
 
 namespace F2S.MvvmX.Samples.Unified.Glass.Framework
 {
-    public abstract class MvxComposableService : IMvxService, IMvxNavigable, IMvxRunnableService
+    public abstract class MvxComposableService : Service, IMvxService, IMvxNavigable, IMvxRunnableService
     {
         public virtual void OnCreate()
         {
@@ -54,6 +54,11 @@ namespace F2S.MvvmX.Samples.Unified.Glass.Framework
         public virtual StartCommandResult OnStartCommand(Intent intent, StartCommandFlags flags, int startId)
         {
             return StartCommandResult.Sticky;
+        }
+
+        public override IBinder OnBind(Intent intent)
+        {
+            throw new NotImplementedException();
         }
     }
 }

@@ -9,3 +9,14 @@ Y:\Dev\Projects\F2S\F2S.MvvmX.Glass.LiveCardApiDemo.Core\obj\Debug\F2S.MvvmX.Gla
 Y:\Dev\Projects\F2S\F2S.MvvmX.Glass.LiveCardApiDemo.Core\obj\Debug\F2S.MvvmX.Glass.LiveCardApiDemo.Core.csprojResolveAssemblyReference.cache
 Y:\Dev\Projects\F2S\F2S.MvvmX.Glass.LiveCardApiDemo.Core\bin\Debug\F2S.MvvmX.Plugins.TextToSpeech.dll
 Y:\Dev\Projects\F2S\F2S.MvvmX.Glass.LiveCardApiDemo.Core\bin\Debug\F2S.MvvmX.Plugins.TextToSpeech.pdb
+D:\F2S\F2S.MvvmX.Glass.LiveCardApiDemo.Core\bin\Debug\F2S.MvvmX.Glass.LiveCardApiDemo.Core.dll
+D:\F2S\F2S.MvvmX.Glass.LiveCardApiDemo.Core\bin\Debug\F2S.MvvmX.Glass.LiveCardApiDemo.Core.pdb
+D:\F2S\F2S.MvvmX.Glass.LiveCardApiDemo.Core\bin\Debug\Cirrious.CrossCore.dll
+D:\F2S\F2S.MvvmX.Glass.LiveCardApiDemo.Core\bin\Debug\Cirrious.MvvmCross.dll
+D:\F2S\F2S.MvvmX.Glass.LiveCardApiDemo.Core\bin\Debug\Cirrious.MvvmCross.Localization.dll
+D:\F2S\F2S.MvvmX.Glass.LiveCardApiDemo.Core\bin\Debug\Cirrious.MvvmCross.Plugins.Messenger.dll
+D:\F2S\F2S.MvvmX.Glass.LiveCardApiDemo.Core\bin\Debug\F2S.MvvmX.Plugins.TextToSpeech.dll
+D:\F2S\F2S.MvvmX.Glass.LiveCardApiDemo.Core\bin\Debug\F2S.MvvmX.Plugins.TextToSpeech.pdb
+D:\F2S\F2S.MvvmX.Glass.LiveCardApiDemo.Core\obj\Debug\F2S.MvvmX.Glass.LiveCardApiDemo.Core.csprojResolveAssemblyReference.cache
+D:\F2S\F2S.MvvmX.Glass.LiveCardApiDemo.Core\obj\Debug\F2S.MvvmX.Glass.LiveCardApiDemo.Core.dll
+D:\F2S\F2S.MvvmX.Glass.LiveCardApiDemo.Core\obj\Debug\F2S.MvvmX.Glass.LiveCardApiDemo.Core.pdb

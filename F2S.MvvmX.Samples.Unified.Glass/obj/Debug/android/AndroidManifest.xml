@@ -1,20 +1,18 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="F2S.MvvmX.Samples.Unified.Glass" android:versionCode="1" android:versionName="1.0">
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="F2S.MvvmX.Samples.Unified.Glass" android:versionCode="1" android:versionName="1.0" android:installLocation="auto">
   <uses-sdk android:minSdkVersion="19" />
   <application android:label="F2S.MvvmX.Samples.Unified.Glass" android:icon="@drawable/icon" android:name="mono.android.app.Application" android:debuggable="true">
+    <activity android:label="CompassMenuActivity" android:name="f2s.mvvmx.samples.unified.glass.components.compass.menus.CompassMenuActivity" />
+    <service android:name="f2s.mvvmx.samples.unified.glass.components.compass.services.CompassService" />
     <service android:name="f2s.mvvmx.samples.unified.glass.framework.MvxServiceRunner" />
     <service android:name="f2s.mvvmx.samples.unified.glass.framework.MvxServiceRunner_1" />
-    <activity android:icon="@drawable/icon" android:label="Immersive Glass Example" android:name="f2s.mvvmx.samples.unified.glass.activities.MainActivity">
+    <service android:name="f2s.mvvmx.samples.unified.glass.services.UnifiedCompositeService" />
+    <activity android:icon="@drawable/icon" android:label="Immersive Glass Example" android:noHistory="true" android:name="f2s.mvvmx.samples.unified.glass.activities.MainActivity">
       <intent-filter>
         <action android:name="android.intent.action.MAIN" />
         <category android:name="android.intent.category.LAUNCHER" />
       </intent-filter>
-      <meta-data android:name="com.google.android.glass.VoiceTrigger" android:resource="@xml/voicetriggerstart" />
-      <intent-filter>
-        <action android:name="com.google.android.glass.action.VOICE_TRIGGER" />
-      </intent-filter>
     </activity>
-    <service android:name="f2s.mvvmx.samples.unified.glass.unifiedComposite" />
     <provider android:name="mono.MonoRuntimeProvider" android:exported="false" android:initOrder="2147483647" android:authorities="F2S.MvvmX.Samples.Unified.Glass.mono.MonoRuntimeProvider.__mono_init__" />
     <receiver android:name="mono.android.Seppuku">
       <intent-filter>
@@ -23,6 +21,8 @@
       </intent-filter>
     </receiver>
   </application>
+  <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+  <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
   <uses-permission android:name="android.permission.INTERNET" />
   <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
 </manifest>

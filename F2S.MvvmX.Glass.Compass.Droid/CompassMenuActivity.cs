@@ -16,7 +16,7 @@ namespace F2S.MvvmX.Glass.Compass.Droid
     //[Activity(Label = "CompassMenuActivity", MainLauncher = true)]
     [Activity(Label = "CompassMenuActivity", MainLauncher = false)]
     //[IntentFilter(new[] { "com.google.android.glass.action.VOICE_TRIGGER" })]
-    //[MetaData("com.google.android.glass.VoiceTrigger", Resource = "@xml/voicetrigger")]
+    //[MetaData("com.google.android.glaszs.VoiceTrigger", Resource = "@xml/voicetrigger")]
     public class CompassMenuActivity : Activity, IServiceConnection
     {
         private Handler _handler = new Handler();

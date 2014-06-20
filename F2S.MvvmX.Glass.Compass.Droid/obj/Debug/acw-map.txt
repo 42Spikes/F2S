@@ -4,6 +4,7 @@ F2S.MvvmX.Glass.Compass.Droid.CompassService;f2s.mvvmx.glass.compass.droid.Compa
 F2S.MvvmX.Glass.Compass.Droid.CompassService.CompassBinder;f2s.mvvmx.glass.compass.droid.CompassService_CompassBinder
 F2S.MvvmX.Glass.Compass.Droid.CompassView;f2s.mvvmx.glass.compass.droid.CompassView
 F2S.MvvmX.Glass.Compass.Droid.DirectStartActivity;f2s.mvvmx.glass.compass.droid.DirectStartActivity
+F2S.MvvmX.Glass.Compass.Droid.Framework.OnChangedListener;f2s.mvvmx.glass.compass.droid.framework.OnChangedListener
 F2S.MvvmX.Glass.Compass.Droid.Util.OnChangedListener;f2s.mvvmx.glass.compass.droid.util.OnChangedListener
 F2S.MvvmX.Glass.Compass.Droid.Util.RenderingCallbackWrapper;f2s.mvvmx.glass.compass.droid.util.RenderingCallbackWrapper
 Android.Glass.Touchpad.GestureDetector.IBaseListenerImplementor;mono.com.google.android.glass.touchpad.GestureDetector_BaseListenerImplementor

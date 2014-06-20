@@ -15,8 +15,7 @@ namespace F2S.MvvmX.Samples.Unified.Glass.Framework
 {
     public interface IMvxPresenter
     {
-        
-        void ShowViewModel<T>();
+        void ShowViewModel<T>(object requestor, object parameters = null);
     }
 
     public abstract class MvxPresenter : IMvxPresenter
@@ -26,6 +25,6 @@ namespace F2S.MvvmX.Samples.Unified.Glass.Framework
             
         }
 
-        public abstract void ShowViewModel<T>();
+        public abstract void ShowViewModel<T>(object requestor, object parameters = null);
     }
 }

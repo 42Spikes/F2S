@@ -49,7 +49,14 @@ namespace F2S.MvvmX.Samples.Unified.Glass.Framework
 
         public MvxServiceRunner()
         {
-            _service = Activator.CreateInstance<TheService>();
+            try
+            {
+
+                _service = Activator.CreateInstance<TheService>();
+            }
+            catch (Exception ex)
+            {
+            }
             //_service.Runner = this;
         }
 

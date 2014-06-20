@@ -11,41 +11,55 @@ using Android.Views;
 using Android.Widget;
 using F2S.MvvmX.Samples.Unified.Glass.Components.Compass.Services;
 using F2S.MvvmX.Samples.Unified.Glass.Framework;
+using F2S.MvvmX.Samples.Unified.Glass.Services;
+using F2S.MvvmX.Samples.Unified.Glass.Plugins.TextToSpeech;
+using F2S.MvvmX.Samples.Unified.Glass.Components.Compass.ViewModels;
+using F2S.MvvmX.Samples.Unified.Glass.Components;
 
 namespace F2S.MvvmX.Samples.Unified.Glass
 {
-    public class App : MvxApplication<MvxGlassCardPresenter>
+    public class App : 
+        MvxApplication<
+        UnifiedPresenter,
+        UnifiedCompositeService>
     {
         public App()
         {
             
         }
 
+        public override void Initialize()
+        {
+            base.Initialize();
+        }
+
         public override void InitializationComplete()
         {
             base.InitializationComplete();
 
-            try
-            {
-                
-            }
-            catch (Exception ex)
-            {
-            }
-        }
-    }
-
-    [Service]
-    public class unifiedComposite : MvxServiceRunner<ComposableCompassService>
-    {
-        public override void OnCreate()
-        {
-            base.OnCreate();
+            //initializeTextToSpeech();
+            //initializeOrientation();
         }
 
-        public override void OnDestroy()
+        protected virtual void initializeTextToSpeech()
         {
-            base.OnDestroy();
+            var textToSpeech = new Plugins.TextToSpeech.TextToSpeech();
+            Mvx.Register(textToSpeech);
+
+        }
+
+        protected virtual void initializeOrientation()
+        {
+            var orientation = new Plugins.Orientation.Orientation();
+            Mvx.Register(orientation);
+        }
+
+        protected override void doInitialNavigation()
+        {
+            base.doInitialNavigation();
+
+            var presenter = Mvx.Resolve<IMvxPresenter>();
+            presenter.ShowViewModel<CompassViewModel>(this);
         }
     }
 }

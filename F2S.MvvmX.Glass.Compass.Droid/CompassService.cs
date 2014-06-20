@@ -71,9 +71,9 @@ namespace F2S.MvvmX.Glass.Compass.Droid
 
             _speech = new TextToSpeech(this, this);
 
-                _orientationManager = new OrientationManager(
-                    this.getSensorManager(),
-                    this.getLocationManager());
+            _orientationManager = new OrientationManager(
+                this.getSensorManager(),
+                this.getLocationManager());
 
             _landmarks = new Landmarks(this);
         }

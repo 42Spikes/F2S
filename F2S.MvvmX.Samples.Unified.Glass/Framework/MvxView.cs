@@ -55,8 +55,8 @@ namespace F2S.MvvmX.Samples.Unified.Glass.Framework
 
         public MvxActivityView()
         {
-            MvxApplication.CurrentContext = this;
-            MvxApplication.verify(this, typeof(T));
+            //MvxApplication.CurrentContext = this;
+            //MvxApplication.verify(this, typeof(T));
         }
 
         public void ShowViewModel<T>(object paramters = null)

@@ -61,6 +61,7 @@
     <Compile Include="DirectStartActivity.cs" />
     <Compile Include="Framework\GlassApplicationStarter.cs" />
     <Compile Include="Framework\LiveCardPresenter.cs" />
+    <Compile Include="Framework\MvxOnChangedListener.cs" />
     <Compile Include="Model\Landmarks.cs" />
     <Compile Include="Model\Place.cs" />
     <Compile Include="OrientationManager.cs" />

@@ -110,7 +110,7 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name android:MvxBind
+          @attr name F2S.MvvmX.Glass.ApiDemo:MvxBind
         */
         public static final int MvxBinding_MvxBind = 0;
         /**
@@ -124,7 +124,7 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name android:MvxLang
+          @attr name F2S.MvvmX.Glass.ApiDemo:MvxLang
         */
         public static final int MvxBinding_MvxLang = 1;
         /** Attributes that can be used with a MvxControl.
@@ -151,7 +151,7 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name android:MvxTemplate
+          @attr name F2S.MvvmX.Glass.ApiDemo:MvxTemplate
         */
         public static final int MvxControl_MvxTemplate = 0;
         /** Attributes that can be used with a MvxImageView.
@@ -178,7 +178,7 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name android:MvxSource
+          @attr name F2S.MvvmX.Glass.ApiDemo:MvxSource
         */
         public static final int MvxImageView_MvxSource = 0;
         /** Attributes that can be used with a MvxListView.
@@ -207,7 +207,7 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name android:MvxDropDownItemTemplate
+          @attr name F2S.MvvmX.Glass.ApiDemo:MvxDropDownItemTemplate
         */
         public static final int MvxListView_MvxDropDownItemTemplate = 1;
         /**
@@ -221,7 +221,7 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name android:MvxItemTemplate
+          @attr name F2S.MvvmX.Glass.ApiDemo:MvxItemTemplate
         */
         public static final int MvxListView_MvxItemTemplate = 0;
     };

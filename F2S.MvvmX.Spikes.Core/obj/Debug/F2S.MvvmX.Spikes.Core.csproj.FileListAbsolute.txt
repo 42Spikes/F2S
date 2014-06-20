@@ -6,3 +6,11 @@ Y:\Dev\Projects\F2S\F2S.MvvmX.Spikes.Core\bin\Debug\Cirrious.MvvmCross.Localizat
 Y:\Dev\Projects\F2S\F2S.MvvmX.Spikes.Core\obj\Debug\F2S.MvvmX.Spikes.Core.csprojResolveAssemblyReference.cache
 Y:\Dev\Projects\F2S\F2S.MvvmX.Spikes.Core\obj\Debug\F2S.MvvmX.Spikes.Core.dll
 Y:\Dev\Projects\F2S\F2S.MvvmX.Spikes.Core\obj\Debug\F2S.MvvmX.Spikes.Core.pdb
+D:\F2S\F2S.MvvmX.Spikes.Core\bin\Debug\F2S.MvvmX.Spikes.Core.dll
+D:\F2S\F2S.MvvmX.Spikes.Core\bin\Debug\F2S.MvvmX.Spikes.Core.pdb
+D:\F2S\F2S.MvvmX.Spikes.Core\bin\Debug\Cirrious.CrossCore.dll
+D:\F2S\F2S.MvvmX.Spikes.Core\bin\Debug\Cirrious.MvvmCross.dll
+D:\F2S\F2S.MvvmX.Spikes.Core\bin\Debug\Cirrious.MvvmCross.Localization.dll
+D:\F2S\F2S.MvvmX.Spikes.Core\obj\Debug\F2S.MvvmX.Spikes.Core.csprojResolveAssemblyReference.cache
+D:\F2S\F2S.MvvmX.Spikes.Core\obj\Debug\F2S.MvvmX.Spikes.Core.dll
+D:\F2S\F2S.MvvmX.Spikes.Core\obj\Debug\F2S.MvvmX.Spikes.Core.pdb

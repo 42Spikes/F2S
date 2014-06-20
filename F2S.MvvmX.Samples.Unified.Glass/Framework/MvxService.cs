@@ -39,8 +39,10 @@ namespace F2S.MvvmX.Samples.Unified.Glass.Framework
             
         }
 
-        public void ShowViewModel<T>(object paramters = null)
+        public virtual void ShowViewModel<T>(object paramters = null)
         {
+            var messenger = Mvx.Resolve<IMvxMessenger>();
+            messenger.Publish(new MvxShowViewModelMessage(this, typeof(T).FullName, paramters));
         }
     }
 }
