@@ -12,12 +12,17 @@ using Android.Widget;
 
 namespace F2S.MvvmX.Samples.Unified.Glass.Framework
 {
+    public interface IMvxInitializable
+    {
+        void Init(object parameters);
+    }
+
     public interface IMvxViewModel
     {
         void ShowViewModel<T>(object parameters = null);
     }
 
-    public class MvxViewModel : IMvxViewModel
+    public abstract class MvxViewModel : IMvxViewModel
     {
         public void ShowViewModel<T>(object parameters = null)
         {

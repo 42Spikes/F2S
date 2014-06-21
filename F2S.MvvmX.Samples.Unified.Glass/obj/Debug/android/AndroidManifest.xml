@@ -4,9 +4,7 @@
   <application android:label="F2S.MvvmX.Samples.Unified.Glass" android:icon="@drawable/icon" android:name="mono.android.app.Application" android:debuggable="true">
     <activity android:label="CompassMenuActivity" android:name="f2s.mvvmx.samples.unified.glass.components.compass.menus.CompassMenuActivity" />
     <service android:name="f2s.mvvmx.samples.unified.glass.components.compass.services.CompassService" />
-    <service android:name="f2s.mvvmx.samples.unified.glass.framework.MvxServiceRunner" />
-    <service android:name="f2s.mvvmx.samples.unified.glass.framework.MvxServiceRunner_1" />
-    <service android:name="f2s.mvvmx.samples.unified.glass.services.UnifiedCompositeService" />
+    <activity android:label="MvxMenuActivity" android:name="f2s.mvvmx.samples.unified.glass.framework.MvxMenuActivity" />
     <activity android:icon="@drawable/icon" android:label="Immersive Glass Example" android:noHistory="true" android:name="f2s.mvvmx.samples.unified.glass.activities.MainActivity">
       <intent-filter>
         <action android:name="android.intent.action.MAIN" />
@@ -24,5 +22,6 @@
   <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
   <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
   <uses-permission android:name="android.permission.INTERNET" />
+  <uses-permission android:name="com.google.android.glass.permission.DEVELOPMENT" />
   <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
 </manifest>

@@ -12,7 +12,7 @@ using Android.Widget;
 
 namespace F2S.MvvmX.Samples.Unified.Glass.Framework
 {
-    public abstract class MvxComposableService : Service, IMvxService, IMvxNavigable, IMvxRunnableService
+    public abstract class MvxComposableService : MvxService, IMvxService, IMvxNavigable, IMvxRunnableService
     {
         public virtual void OnCreate()
         {

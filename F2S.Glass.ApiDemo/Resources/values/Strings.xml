@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="Hello">Hello World, Click Me!</string>
+    <string name="ApplicationName">F2S.Glass.ApiDemo</string>
+    <string name="text_cards">Card API examples</string>
+    <string name="text_gesture_detector">GestureDetector API examples</string>
+    <string name="text_theming">Theming examples</string>
+    <string name="glass_voice_trigger">do a demo</string>
+
+    <string name="last_gesture">Last gesture</string>
+    <string name="finger_count">Finger count</string>
+    <string name="scrolling">Scroll type</string>
+    <string name="displacement">Displacement</string>
+    <string name="delta">Delta</string>
+    <string name="velocity">Velocity</string>
+    <string name="scroll_one_finger">One-finger</string>
+    <string name="scroll_two_finger">Two-finger</string>
+    <string name="pixel_distance_units">%1$.0f px</string>
+    <string name="pixel_velocity_units">%1$.3f px/s</string>
+    <string name="swipe_down_again">Swipe down again to go back</string>
+
+
+</resources>

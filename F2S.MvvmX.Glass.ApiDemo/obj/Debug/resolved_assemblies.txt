@@ -1,13 +1,13 @@
-C:\Users\mike_000\Desktop\F2S\F2S.MvvmX.Glass.ApiDemo\bin\Debug\F2S.MvvmX.Glass.ApiDemo.dll
-C:\Users\mike_000\Desktop\F2S\packages\MvvmCross.HotTuna.CrossCore.3.1.1\lib\MonoAndroid\Cirrious.CrossCore.dll
-C:\Users\mike_000\Desktop\F2S\packages\MvvmCross.HotTuna.CrossCore.3.1.1\lib\MonoAndroid\Cirrious.CrossCore.Droid.dll
-C:\Users\mike_000\Desktop\F2S\packages\MvvmCross.HotTuna.CrossCore.3.1.1\lib\MonoAndroid\Cirrious.MvvmCross.Binding.dll
-C:\Users\mike_000\Desktop\F2S\packages\MvvmCross.HotTuna.CrossCore.3.1.1\lib\MonoAndroid\Cirrious.MvvmCross.Binding.Droid.dll
-C:\Users\mike_000\Desktop\F2S\packages\MvvmCross.HotTuna.MvvmCrossLibraries.3.1.1\lib\MonoAndroid\Cirrious.MvvmCross.dll
-C:\Users\mike_000\Desktop\F2S\packages\MvvmCross.HotTuna.MvvmCrossLibraries.3.1.1\lib\MonoAndroid\Cirrious.MvvmCross.Droid.dll
-C:\Users\mike_000\Desktop\F2S\packages\MvvmCross.HotTuna.CrossCore.3.1.1\lib\MonoAndroid\Cirrious.MvvmCross.Localization.dll
-C:\Users\mike_000\Desktop\F2S\F2S.MvvmX.Glass.ApiDemo.Core\bin\Debug\F2S.MvvmX.Glass.ApiDemo.Core.dll
-C:\Users\mike_000\Desktop\F2S\Components\googleglass-1.7.1\lib\android\GoogleGlassBindings.dll
+Y:\Dev\Projects\F2S\F2S.MvvmX.Glass.ApiDemo\bin\Debug\F2S.MvvmX.Glass.ApiDemo.dll
+Y:\Dev\Projects\F2S\packages\MvvmCross.HotTuna.CrossCore.3.1.1\lib\MonoAndroid\Cirrious.CrossCore.dll
+Y:\Dev\Projects\F2S\packages\MvvmCross.HotTuna.CrossCore.3.1.1\lib\MonoAndroid\Cirrious.CrossCore.Droid.dll
+Y:\Dev\Projects\F2S\packages\MvvmCross.HotTuna.CrossCore.3.1.1\lib\MonoAndroid\Cirrious.MvvmCross.Binding.dll
+Y:\Dev\Projects\F2S\packages\MvvmCross.HotTuna.CrossCore.3.1.1\lib\MonoAndroid\Cirrious.MvvmCross.Binding.Droid.dll
+Y:\Dev\Projects\F2S\packages\MvvmCross.HotTuna.MvvmCrossLibraries.3.1.1\lib\MonoAndroid\Cirrious.MvvmCross.dll
+Y:\Dev\Projects\F2S\packages\MvvmCross.HotTuna.MvvmCrossLibraries.3.1.1\lib\MonoAndroid\Cirrious.MvvmCross.Droid.dll
+Y:\Dev\Projects\F2S\packages\MvvmCross.HotTuna.CrossCore.3.1.1\lib\MonoAndroid\Cirrious.MvvmCross.Localization.dll
+Y:\Dev\Projects\F2S\F2S.MvvmX.Glass.ApiDemo.Core\bin\Debug\F2S.MvvmX.Glass.ApiDemo.Core.dll
+Y:\Dev\Projects\F2S\Components\googleglass-1.7.1\lib\android\GoogleGlassBindings.dll
 C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\MonoAndroid\v1.0\Facades\System.Collections.Concurrent.dll
 C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\MonoAndroid\v1.0\Facades\System.Collections.dll
 C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\MonoAndroid\v1.0\Facades\System.ComponentModel.Annotations.dll

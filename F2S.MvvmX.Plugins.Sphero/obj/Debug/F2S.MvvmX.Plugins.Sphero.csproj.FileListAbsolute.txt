@@ -1,11 +1,3 @@
-Y:\Dev\Projects\F2S\F2S.MvvmX.Plugins.Sphero\bin\Debug\F2S.MvvmX.Plugins.Sphero.dll
-Y:\Dev\Projects\F2S\F2S.MvvmX.Plugins.Sphero\bin\Debug\F2S.MvvmX.Plugins.Sphero.pdb
-Y:\Dev\Projects\F2S\F2S.MvvmX.Plugins.Sphero\bin\Debug\Cirrious.CrossCore.dll
-Y:\Dev\Projects\F2S\F2S.MvvmX.Plugins.Sphero\bin\Debug\Cirrious.MvvmCross.Localization.dll
-Y:\Dev\Projects\F2S\F2S.MvvmX.Plugins.Sphero\bin\Debug\Cirrious.MvvmCross.Plugins.Color.dll
-Y:\Dev\Projects\F2S\F2S.MvvmX.Plugins.Sphero\obj\Debug\F2S.MvvmX.Plugins.Sphero.csprojResolveAssemblyReference.cache
-Y:\Dev\Projects\F2S\F2S.MvvmX.Plugins.Sphero\obj\Debug\F2S.MvvmX.Plugins.Sphero.dll
-Y:\Dev\Projects\F2S\F2S.MvvmX.Plugins.Sphero\obj\Debug\F2S.MvvmX.Plugins.Sphero.pdb
 D:\F2S\F2S.MvvmX.Plugins.Sphero\bin\Debug\F2S.MvvmX.Plugins.Sphero.dll
 D:\F2S\F2S.MvvmX.Plugins.Sphero\bin\Debug\F2S.MvvmX.Plugins.Sphero.pdb
 D:\F2S\F2S.MvvmX.Plugins.Sphero\bin\Debug\Cirrious.CrossCore.dll
@@ -22,3 +14,11 @@ C:\Users\mike_000\Desktop\F2S\F2S.MvvmX.Plugins.Sphero\bin\Debug\Cirrious.MvvmCr
 C:\Users\mike_000\Desktop\F2S\F2S.MvvmX.Plugins.Sphero\obj\Debug\F2S.MvvmX.Plugins.Sphero.csprojResolveAssemblyReference.cache
 C:\Users\mike_000\Desktop\F2S\F2S.MvvmX.Plugins.Sphero\obj\Debug\F2S.MvvmX.Plugins.Sphero.dll
 C:\Users\mike_000\Desktop\F2S\F2S.MvvmX.Plugins.Sphero\obj\Debug\F2S.MvvmX.Plugins.Sphero.pdb
+Y:\Dev\Projects\F2S\F2S.MvvmX.Plugins.Sphero\bin\Debug\F2S.MvvmX.Plugins.Sphero.dll
+Y:\Dev\Projects\F2S\F2S.MvvmX.Plugins.Sphero\bin\Debug\F2S.MvvmX.Plugins.Sphero.pdb
+Y:\Dev\Projects\F2S\F2S.MvvmX.Plugins.Sphero\bin\Debug\Cirrious.CrossCore.dll
+Y:\Dev\Projects\F2S\F2S.MvvmX.Plugins.Sphero\bin\Debug\Cirrious.MvvmCross.Localization.dll
+Y:\Dev\Projects\F2S\F2S.MvvmX.Plugins.Sphero\bin\Debug\Cirrious.MvvmCross.Plugins.Color.dll
+Y:\Dev\Projects\F2S\F2S.MvvmX.Plugins.Sphero\obj\Debug\F2S.MvvmX.Plugins.Sphero.csprojResolveAssemblyReference.cache
+Y:\Dev\Projects\F2S\F2S.MvvmX.Plugins.Sphero\obj\Debug\F2S.MvvmX.Plugins.Sphero.dll
+Y:\Dev\Projects\F2S\F2S.MvvmX.Plugins.Sphero\obj\Debug\F2S.MvvmX.Plugins.Sphero.pdb

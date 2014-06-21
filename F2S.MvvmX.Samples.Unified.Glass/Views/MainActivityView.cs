@@ -5,6 +5,7 @@ using System.Text;
 
 using Android.App;
 using Android.Content;
+using Android.Glass.App;
 using Android.OS;
 using Android.Runtime;
 using Android.Views;
@@ -21,22 +22,23 @@ namespace F2S.MvvmX.Samples.Unified.Glass.Activities
     //[MetaData("com.google.android.glass.VoiceTrigger", Resource = "@xml/voicetriggerstart")]
     //[MvxStartActivity]
 
-    public class MainActivity : MvxActivityView<MainViewModel>
+    public class MainActivity : Activity // MvxActivityView<MainViewModel>
     {
+        public static MainActivity Active { get; set; }
+
         public MainActivity()
         {
+            Active = this;
         }
 
         protected override void OnCreate(Bundle savedInstanceState)
         {
             base.OnCreate(savedInstanceState);
 
-            /*
-            StartService(
-                new Intent(
-                    MvxApplication.CurrentContext,
-                    typeof (UnifiedCompositeService)));
-             * */
+            var card2 = new Card(this);
+            card2.SetText("fubar");
+            card2.SetFootnote("Just scanned!");
+            SetContentView(card2.View);
         }
 
         protected override void OnDestroy()

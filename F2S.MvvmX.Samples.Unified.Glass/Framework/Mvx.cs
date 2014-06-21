@@ -34,6 +34,13 @@ namespace F2S.MvvmX.Samples.Unified.Glass.Framework
             return _container.Resolve<T>();
         }
 
+        public static T SafeResolve<T>() where T : class
+        {
+            if (_container == null) return default(T);
+            if (!_container.CanResolve<T>()) return default(T);
+            return _container.Resolve<T>();
+        }
+
         public static void Register<T>(T instance) where T : class
         {
             _container.Register<T>(instance);

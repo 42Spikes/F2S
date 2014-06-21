@@ -25,7 +25,7 @@ namespace F2S.MvvmX.Samples.Unified.Glass.Components.Compass.Model
     {
         public List<Place> Places { get; set; }
 
-        private const double _maxDistanceKM = 10.0;
+        private const double _maxDistanceKM = 150.0;
  
         public Landmarks(Context context)
         {

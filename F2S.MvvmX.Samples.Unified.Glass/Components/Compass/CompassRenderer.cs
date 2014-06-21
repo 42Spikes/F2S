@@ -78,7 +78,9 @@ namespace F2S.MvvmX.Samples.Unified.Glass.Components.Compass
         public void AttachedService(IMvxService service)
         {
             var s = service as CompassService;
+            _orientationManager = s.OrientationManager;
             _compassView.OrientationManager = s.OrientationManager;
+            _landmarks = s.Landmarks;
         }
 
         #region OrientationManager.IOnChangedListener
@@ -230,6 +232,7 @@ namespace F2S.MvvmX.Samples.Unified.Glass.Components.Compass
                         var nearbyPlaces = _landmarks.getNearbyLandmarks(location.Latitude, location.Longitude);
                         _compassView.NearbyPlaces = nearbyPlaces;
                     }
+
                     _cancelToken = new CancellationTokenSource().Token;
                     _renderTask = Task.Factory.StartNew(
                         _ =>

@@ -9,23 +9,24 @@ using Android.OS;
 using Android.Runtime;
 using Android.Views;
 using Android.Widget;
+using F2S.MvvmX.Samples.Unified.Glass.Components.Compass;
 using F2S.MvvmX.Samples.Unified.Glass.Components.Compass.Services;
 using F2S.MvvmX.Samples.Unified.Glass.Framework;
 using F2S.MvvmX.Samples.Unified.Glass.Services;
 using F2S.MvvmX.Samples.Unified.Glass.Plugins.TextToSpeech;
 using F2S.MvvmX.Samples.Unified.Glass.Components.Compass.ViewModels;
 using F2S.MvvmX.Samples.Unified.Glass.Components;
+using F2S.MvvmX.Samples.Unified.Glass.ViewModels;
 
 namespace F2S.MvvmX.Samples.Unified.Glass
 {
     public class App : 
         MvxApplication<
-        UnifiedPresenter,
-        UnifiedCompositeService>
+            UnifiedPresenter,
+            UnifiedCompositeService>
     {
         public App()
         {
-            
         }
 
         public override void Initialize()
@@ -59,7 +60,25 @@ namespace F2S.MvvmX.Samples.Unified.Glass
             base.doInitialNavigation();
 
             var presenter = Mvx.Resolve<IMvxPresenter>();
-            presenter.ShowViewModel<CompassViewModel>(this);
+            //presenter.ShowViewModel<CompassViewModel>(this);
+            var parms = new Dictionary<string, string>()
+            {
+                {"Text", "Hi"},
+                {"Footer", "There"}
+            };
+            presenter.ShowViewModel<MainViewModel>(this, parms);
         }
+    }
+
+    public class CompassRendererAnnotation : MvxDirectRenderingViewModelAnnotator
+        <CompassViewModel, CompassService, CompassRenderer>
+    {
+        public CompassRendererAnnotation()
+        {
+        }
+    }
+
+    public class MainViewModelAnnotation : MvxStaticCardAnnotation<MainViewModel>
+    {
     }
 }

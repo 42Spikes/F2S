@@ -2,7 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-
+using System.Threading.Tasks;
 using Android.App;
 using Android.Content;
 using Android.OS;
@@ -17,68 +17,65 @@ namespace F2S.MvvmX.Samples.Unified.Glass.Framework
         
     }
 
-    [Service]
-    public class MvxServiceRunner : MvxService, IMvxServiceRunner
+    public abstract class MvxServiceRunner : IMvxServiceRunner
     {
         public MvxServiceRunner()
         {
             
         }
 
-        public override IBinder OnBind(Intent intent)
+        public Task<T> startService<T>() where T : MvxService
         {
-            throw new NotImplementedException();
+            var tcs = new TaskCompletionSource<T>();
+
+            // not necessarily safe right now, as there will not be a failed acknowledgement
+            // In process only for now, so ok for the moment...
+            var messenger = Mvx.Resolve<IMvxMessenger>();
+            Action<MvxServicesStartedMessage> handler;
+            handler = m =>
+            {
+                if (m.Service.GetType() == typeof (T))
+                {
+                    tcs.SetResult((T) m.Service);
+                    //messenger.Unsubscribe(handler);
+                }
+            };
+
+            messenger.Subscribe(handler);
+
+            MvxApplication.CurrentContext.StartService(
+                new Intent(MvxApplication.CurrentContext, typeof (T)));
+
+            return tcs.Task;
         }
 
-        public override void OnCreate()
-        {
-            base.OnCreate();
-        }
-
-        public override void OnDestroy()
-        {
-            base.OnDestroy();
-        }
+        public abstract void startServices();
+        public abstract Task startServicesAsync();
     }
 
-    [Service]
     public class MvxServiceRunner<TheService> : MvxServiceRunner
-        where TheService : IMvxService
+        where TheService : MvxService
     {
         protected TheService _service;
 
         public MvxServiceRunner()
         {
+        }
+
+        public override void startServices()
+        {
             try
             {
-
-                _service = Activator.CreateInstance<TheService>();
+                startService<TheService>().Wait();
             }
             catch (Exception ex)
             {
             }
-            //_service.Runner = this;
         }
 
-        public override void OnCreate()
+        public override Task startServicesAsync()
         {
-            base.OnCreate();
-
-            //GlassMvxApp.MainService = this;
-
-            _service.OnCreate();
-        }
-
-        public override StartCommandResult OnStartCommand(Intent intent, StartCommandFlags flags, int startId)
-        {
-            return _service.OnStartCommand(intent, flags, startId);
-        }
-
-        public override void OnDestroy()
-        {
-            base.OnDestroy();
-
-            _service.OnDestroy();
+            return startService<TheService>();
         }
     }
 }

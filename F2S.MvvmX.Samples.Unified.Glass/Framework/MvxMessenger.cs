@@ -20,6 +20,7 @@ namespace F2S.MvvmX.Samples.Unified.Glass.Framework
     public class MvxMessenger : IMvxMessenger
     {
         private Dictionary<Type, List<Action<IMvxMessage>>> _map = new Dictionary<Type, List<Action<IMvxMessage>>>(); 
+
         public void Publish<T>(T message) where T : IMvxMessage
         {
             var toremove = new List<Action<IMvxMessage>>();
@@ -27,16 +28,15 @@ namespace F2S.MvvmX.Samples.Unified.Glass.Framework
             if (_map.ContainsKey(t))
             {
                 var targets = _map[t];
-                foreach (var ho in targets)
+                foreach (var handler in targets)
                 {
                     try
                     {
-                        var handler = (Action<IMvxMessage>) ho;
                         handler(message);
                     }
                     catch (Exception)
                     {
-                        toremove.Add(ho);
+                        toremove.Add(handler);
                     }
                 }
                 toremove.ForEach(tr => _map[t].Remove(tr));
@@ -51,6 +51,16 @@ namespace F2S.MvvmX.Samples.Unified.Glass.Framework
                 _map[t]= new List<Action<IMvxMessage>>();
             }
             _map[t].Add(m => handler((T)m));
+        }
+
+        public void Unsubscribe<T>(Action<T> handler) where T : IMvxMessage
+        {
+            var toremove = new List<Action<IMvxMessage>>();
+            var t = typeof (T);
+            if (_map.ContainsKey(t))
+            {
+                //if (_map[t].Contains(handler)) _map[t].Remove(handler);
+            }
         }
     }
 }

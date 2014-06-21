@@ -17,7 +17,7 @@ using F2S.MvvmX.Samples.Unified.Glass.Plugins.TextToSpeech;
 namespace F2S.MvvmX.Samples.Unified.Glass.Components.Compass.Services
 {
     [Service]
-    public class CompassService : MvxComposableService, IMvxNavigable
+    public class CompassService : MvxService, IMvxNavigable
     {
         private OrientationManager _orientationManager;
         public OrientationManager OrientationManager
@@ -26,6 +26,8 @@ namespace F2S.MvvmX.Samples.Unified.Glass.Components.Compass.Services
         }
 
         private Landmarks _landmarks;
+        public Landmarks Landmarks { get { return _landmarks; } }
+
         private CompassServiceBinder _binder;
 
         public CompassService()
@@ -46,13 +48,19 @@ namespace F2S.MvvmX.Samples.Unified.Glass.Components.Compass.Services
 
         public override void OnCreate()
         {
-            base.OnCreate();
-
             _orientationManager = new OrientationManager(
                 this.getSensorManager(),
                 this.getLocationManager());
 
             _landmarks = new Landmarks(this);
+
+            // note that I put this after the code
+            base.OnCreate();
+        }
+
+        public override StartCommandResult OnStartCommand(Intent intent, StartCommandFlags flags, int startId)
+        {
+            return StartCommandResult.Sticky;
         }
 
         public override void OnDestroy()

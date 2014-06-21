@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="F2S.Glass.ApiDemo" android:versionCode="1" android:versionName="1.0">
+	<uses-sdk />
+	<application android:label="F2S.Glass.ApiDemo" android:icon="@drawable/Icon"></application>
+  <uses-permission android:name="com.google.android.glass.permission.DEVELOPMENT"/>
+
+</manifest>

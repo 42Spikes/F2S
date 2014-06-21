@@ -17,5 +17,6 @@ namespace F2S.MvvmX.Samples.Unified.Glass.Framework
     {
         void Publish<T>(T message) where T : IMvxMessage;
         void Subscribe<T>(Action<T> handler) where T : IMvxMessage;
+        void Unsubscribe<T>(Action<T> handler) where T : IMvxMessage;
     }
 }

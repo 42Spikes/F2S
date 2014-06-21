@@ -177,11 +177,13 @@ namespace F2S.MvvmX.Samples.Unified.Glass.Framework
         }
     }
 
-    public abstract class MvxApplication<Presenter, TheService> : 
+    public abstract class MvxApplication<Presenter, ServiceRunner> : 
         MvxApplication 
             where Presenter : IMvxPresenter
-            where TheService : IMvxService
+            where ServiceRunner : MvxServiceRunner
     {
+        private MvxServiceRunner _runner;
+
         static MvxApplication()
         {
         }
@@ -193,6 +195,8 @@ namespace F2S.MvvmX.Samples.Unified.Glass.Framework
                 throw new Exception("App already initialized");
             }
             _instance = this;
+
+            _runner = Activator.CreateInstance<ServiceRunner>();
         }
 
         public override void Initialize()
@@ -206,7 +210,6 @@ namespace F2S.MvvmX.Samples.Unified.Glass.Framework
         {
             createMessenger(); // must go before presenter
             createPresenter();
-
         }
 
         protected virtual void createPresenter()
@@ -221,12 +224,11 @@ namespace F2S.MvvmX.Samples.Unified.Glass.Framework
 
         protected virtual void startServices()
         {
-            StartService<TheService>();
+            _runner.startServices();
         }
 
         protected virtual void doInitialNavigation()
         {
-
         }
     }
 }

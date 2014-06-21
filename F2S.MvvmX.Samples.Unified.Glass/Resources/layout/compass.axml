@@ -3,7 +3,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@android:color/black">
-    <F2S.MvvmX.Glass.Compass.Droid.CompassView
+    <F2S.MvvmX.Samples.Unified.Glass.Components.Compass.Views.CompassView
         android:id="@+id/compass"
         android:layout_width="match_parent"
         android:layout_height="match_parent" />

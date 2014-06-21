@@ -38,6 +38,21 @@ namespace F2S.MvvmX.Samples.Unified.Glass.Framework
         public virtual void ViewModelSet()
         {
         }
+
+        protected override void OnCreate(Bundle savedInstanceState)
+        {
+            base.OnCreate(savedInstanceState);
+
+            var presenter = Mvx.SafeResolve<IMvxPresenter>();
+            if (presenter != null) presenter.ViewCreated(this);
+        }
+
+        protected override void OnDestroy()
+        {
+            base.OnDestroy();
+            var presenter = Mvx.SafeResolve<IMvxPresenter>();
+            if (presenter != null) presenter.ViewDestroyed(this);
+        }
     }
 
     public class MvxActivityView<T> : MvxActivityView, IMvxView, IMvxNavigable
