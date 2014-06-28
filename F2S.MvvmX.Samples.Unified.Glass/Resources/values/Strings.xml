@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="ApplicationName">Total Immersion</string>
-    <string name="glass_voice_trigger">Total Immersion</string>
+    <string name="ApplicationName">Code Camp Compass</string>
+    <string name="glass_voice_trigger">Show me a compass</string>
 
   <string-array name="direction_abbreviations">
     <item>N</item>

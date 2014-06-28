@@ -60,6 +60,15 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Application.cs" />
+    <Compile Include="Bing\BingImagesActivity.cs" />
+    <Compile Include="Bing\BingImageService.cs" />
+    <Compile Include="Bing\IBingImageService.cs" />
+    <Compile Include="Bing\Model\HotSpot.cs" />
+    <Compile Include="Bing\Model\HotSpotCollection.cs" />
+    <Compile Include="Bing\Model\Image.cs" />
+    <Compile Include="Bing\Model\ImageCollection.cs" />
+    <Compile Include="Bing\Model\ImageModel.cs" />
     <Compile Include="Callbacks\OnItemClickListener.cs" />
     <Compile Include="CardScrollerActivity.cs" />
     <Compile Include="Cards\BleuImageScroller.cs" />
@@ -106,6 +115,7 @@
     <AndroidResource Include="Resources\drawable\finger_trace_0.xml" />
     <AndroidResource Include="Resources\drawable\finger_trace_1.xml" />
     <AndroidResource Include="Resources\drawable\finger_trace_2.xml" />
+    <AndroidResource Include="Resources\drawable\happy_kitty_header.jpg" />
   </ItemGroup>
   <ItemGroup>
     <XamarinComponentReference Include="googleglass">

@@ -13,6 +13,7 @@ using Android.Util;
 using Android.Views;
 using Android.Widget;
 using F2S.MvvmX.Samples.Unified.Glass.Components.Compass.Utils;
+using F2S.MvvmX.Samples.Unified.Glass.ViewModels;
 
 namespace F2S.MvvmX.Samples.Unified.Glass.Components.Compass
 {
@@ -207,6 +208,8 @@ namespace F2S.MvvmX.Samples.Unified.Glass.Components.Compass
                     }
 
                     _tracking = true;
+
+                    //OnLocationChanged(new Location() { Latitude = 40.096300, Longitude = -75.412868 });
                 }
             }
             catch (Exception e)

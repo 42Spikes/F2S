@@ -13,6 +13,7 @@ using Android.Views;
 using Android.Widget;
 using Java.Security;
 using TinyIoC;
+using TinyMessenger;
 
 namespace F2S.MvvmX.Samples.Unified.Glass.Framework
 {
@@ -74,6 +75,8 @@ namespace F2S.MvvmX.Samples.Unified.Glass.Framework
 
         public static void verify(IMvxView view, Type viewModel = null)
         {
+            verifyApp();
+
             if (_instance == null && !_initialized)
             {
                 Task.Factory.StartNew(() => startInitialization(view, viewModel));
@@ -82,14 +85,52 @@ namespace F2S.MvvmX.Samples.Unified.Glass.Framework
 
         public static void verify(IMvxService service)
         {
+            verifyApp();
+
             if (_instance == null && !_initialized)
             {
+
                 Task.Factory.StartNew(() => startInitialization()).ContinueWith(_ => _instance.track(service));
             }
             else
             {
                 _instance.track(service);
             }
+        }
+
+        private static void verifyApp()
+        {
+            if (_instance != null) return;
+
+            var assembly = typeof(MvxApplication).Assembly;
+            var appClasses =
+                assembly.DefinedTypes.Where(dt => dt.IsSubclassOf(typeof(MvxApplication)) && !dt.IsAbstract)
+                    .ToArray();
+            if (appClasses.Length == 0) throw new Exception("No application classes defined");
+            if (appClasses.Length > 1) throw new Exception("More than one application class defined");
+
+            _instance = Activator.CreateInstance(appClasses[0]) as MvxApplication;
+
+            Mvx.App = _instance;
+            Mvx.Register(_instance);
+
+            _instance.firstChanceInitialize();
+        }
+
+        public virtual void firstChanceInitialize()
+        {
+            createMessenger();
+            createPresenter();
+        }
+
+        protected virtual void createMessenger()
+        {
+            Mvx.Register<ITinyMessengerHub>(new TinyMessengerHub());
+        }
+
+        protected virtual void createPresenter()
+        {
+            
         }
 
         private void track(IMvxService service)
@@ -110,20 +151,6 @@ namespace F2S.MvvmX.Samples.Unified.Glass.Framework
             {
                 try
                 {
-                    if (_instance != null) return;
-
-                    var assembly = typeof (MvxApplication).Assembly;
-                    var appClasses =
-                        assembly.DefinedTypes.Where(dt => dt.IsSubclassOf(typeof (MvxApplication)) && !dt.IsAbstract)
-                            .ToArray();
-                    if (appClasses.Length == 0) throw new Exception("No applicaiton classes defined");
-                    if (appClasses.Length > 1) throw new Exception("More than one application class defined");
-
-                    _instance = Activator.CreateInstance(appClasses[0]) as MvxApplication;
-
-                    Mvx.App = _instance;
-                    Mvx.Register(_instance);
-
                     _instance.Initialize();
 
                     _initialized = true;
@@ -199,8 +226,15 @@ namespace F2S.MvvmX.Samples.Unified.Glass.Framework
             _runner = Activator.CreateInstance<ServiceRunner>();
         }
 
+        public override void firstChanceInitialize()
+        {
+            // runs on UI thread
+            base.firstChanceInitialize();
+        }
+
         public override void Initialize()
         {
+            // runs on background thread
             performInitialization();
             startServices();
             doInitialNavigation();
@@ -208,18 +242,27 @@ namespace F2S.MvvmX.Samples.Unified.Glass.Framework
 
         protected virtual void performInitialization()
         {
-            createMessenger(); // must go before presenter
-            createPresenter();
+            //createMessenger(); // must go before presenter
+            //createPresenter();
         }
 
-        protected virtual void createPresenter()
+        protected override void createPresenter()
         {
-            Mvx.Register<IMvxPresenter>(Activator.CreateInstance<Presenter>());
+            try
+            {
+                var t = typeof (Presenter);
+                var n = t.Name;
+                var presenter = Activator.CreateInstance<Presenter>();
+                Mvx.Register<IMvxPresenter>(presenter);
+            }
+            catch (Exception ex)
+            {
+            }
         }
 
         protected virtual void createMessenger()
         {
-            Mvx.Register<IMvxMessenger>(new MvxMessenger());
+            base.createMessenger();
         }
 
         protected virtual void startServices()

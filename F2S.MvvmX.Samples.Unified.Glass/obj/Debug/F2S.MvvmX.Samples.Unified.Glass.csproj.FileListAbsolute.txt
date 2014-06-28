@@ -73,3 +73,4 @@ Y:\Dev\Projects\F2S\F2S.MvvmX.Samples.Unified.Glass\obj\Debug\res\drawable\place
 Y:\Dev\Projects\F2S\F2S.MvvmX.Samples.Unified.Glass\obj\Debug\res\menu\compass.xml
 Y:\Dev\Projects\F2S\F2S.MvvmX.Samples.Unified.Glass\obj\Debug\R.cs.flag
 Y:\Dev\Projects\F2S\F2S.MvvmX.Samples.Unified.Glass\obj\Debug\uploadflags.txt
+Y:\Dev\Projects\F2S\F2S.MvvmX.Samples.Unified.Glass\obj\Debug\F2S.MvvmX.Samples.Unified.Glass.csprojResolveAssemblyReference.cache

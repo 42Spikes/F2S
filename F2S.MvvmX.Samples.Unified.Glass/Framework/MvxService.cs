@@ -11,6 +11,7 @@ using Android.Views;
 using Android.Widget;
 using F2S.MvvmX.Samples.Unified.Glass.Components.Compass;
 using Java.Security;
+using TinyMessenger;
 
 namespace F2S.MvvmX.Samples.Unified.Glass.Framework
 {
@@ -49,7 +50,9 @@ namespace F2S.MvvmX.Samples.Unified.Glass.Framework
 
         public virtual void ShowViewModel<T>(object paramters = null)
         {
-            var messenger = Mvx.Resolve<IMvxMessenger>();
+            //var messenger = Mvx.Resolve<IMvxMessenger>();
+            //messenger.Publish(new MvxShowViewModelMessage(this, typeof(T).FullName, paramters));
+            var messenger = Mvx.Resolve<ITinyMessengerHub>();
             messenger.Publish(new MvxShowViewModelMessage(this, typeof(T).FullName, paramters));
         }
 

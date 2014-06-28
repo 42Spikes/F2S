@@ -9,10 +9,11 @@ using Android.OS;
 using Android.Runtime;
 using Android.Views;
 using Android.Widget;
+using TinyMessenger;
 
 namespace F2S.MvvmX.Samples.Unified.Glass.Framework
 {
-    public class MvxShowViewModelMessage : MvxMessage
+    public class MvxShowViewModelMessage : TinyMessageBase
     {
         public string ViewModelTypeName { get; private set; }
         public object Parameters { get; private set; }

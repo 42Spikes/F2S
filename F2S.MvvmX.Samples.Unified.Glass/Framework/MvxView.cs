@@ -10,6 +10,7 @@ using Android.OS;
 using Android.Runtime;
 using Android.Views;
 using Android.Widget;
+using TinyMessenger;
 
 namespace F2S.MvvmX.Samples.Unified.Glass.Framework
 {
@@ -20,13 +21,14 @@ namespace F2S.MvvmX.Samples.Unified.Glass.Framework
         void ViewModelSet();
     }
 
-    public class MvxActivityView : Activity, IMvxView, IMvxNavigable
+    public class MvxActivityView : Activity, IMvxView, IMvxNavigable, IDisposable
     {
         public MvxViewModel ViewModel { get; set; }
 
         public MvxActivityView()
         {
-            MvxApplication.CurrentContext = this;
+            var presenter = Mvx.SafeResolve<IMvxPresenter>();
+            if (presenter != null) presenter.ViewInstantiated(this);
             MvxApplication.verify(this);
         }
 
@@ -53,6 +55,46 @@ namespace F2S.MvvmX.Samples.Unified.Glass.Framework
             var presenter = Mvx.SafeResolve<IMvxPresenter>();
             if (presenter != null) presenter.ViewDestroyed(this);
         }
+
+        protected override void OnStart()
+        {
+            base.OnStart();
+
+            var presenter = Mvx.SafeResolve<IMvxPresenter>();
+            if (presenter != null) presenter.ViewActivating(this);
+        }
+
+        protected override void OnStop()
+        {
+            base.OnStop();
+
+            var presenter = Mvx.SafeResolve<IMvxPresenter>();
+            if (presenter != null) presenter.ViewDeactivating(this);
+        }
+
+        protected override void OnPause()
+        {
+            base.OnStop();
+
+            var presenter = Mvx.SafeResolve<IMvxPresenter>();
+            if (presenter != null) presenter.ViewPaused(this);
+        }
+
+        protected override void OnResume()
+        {
+            base.OnStop();
+
+            var presenter = Mvx.SafeResolve<IMvxPresenter>();
+            if (presenter != null) presenter.ViewResumed(this);
+        }
+
+        protected override void OnRestart()
+        {
+            base.OnStop();
+
+            var presenter = Mvx.SafeResolve<IMvxPresenter>();
+            if (presenter != null) presenter.ViewRestarted(this);
+        }
     }
 
     public class MvxActivityView<T> : MvxActivityView, IMvxView, IMvxNavigable
@@ -70,13 +112,18 @@ namespace F2S.MvvmX.Samples.Unified.Glass.Framework
 
         public MvxActivityView()
         {
-            //MvxApplication.CurrentContext = this;
-            //MvxApplication.verify(this, typeof(T));
         }
 
-        public void ShowViewModel<T>(object paramters = null)
+        protected override void OnCreate(Bundle savedInstanceState)
         {
-            throw new NotImplementedException();
+            base.OnCreate(savedInstanceState);
+
+            ShowViewModel<T>();
+        }
+
+        public void ShowViewModel<T>(object parameters = null)
+        {
+            Mvx.Resolve<IMvxPresenter>(p => p.ShowViewModel<T>(parameters));
         }
 
         public virtual void ViewModelSet()

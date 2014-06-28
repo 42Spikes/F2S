@@ -10,6 +10,7 @@ using Android.Views;
 using Android.Widget;
 using Android.OS;
 using Android.Glass.App;
+using F2S.Glass.ApiDemo.Bing;
 using F2S.Glass.ApiDemo.Callbacks;
 using F2S.Glass.ApiDemo.Cards;
 using F2S.Glass.ApiDemo.Theming;
@@ -27,6 +28,8 @@ namespace F2S.Glass.ApiDemo
         private CardAdapter _adapter;
         private CardScrollView _cardScroller;
 
+        public static BingImageService Bing { get; private set; }
+
         protected override void OnCreate(Bundle bundle)
         {
             base.OnCreate(bundle);
@@ -38,6 +41,8 @@ namespace F2S.Glass.ApiDemo
             SetContentView(_cardScroller);
 
             setCardScrollerListener();
+
+            Bing = new BingImageService();
         }
 
         protected override void OnDestroy()
@@ -49,6 +54,7 @@ namespace F2S.Glass.ApiDemo
         {
             var cards = new List<Card>();
             cards.Add(new Card(context).SetText(Resource.String.text_cards));
+            cards.Add(new Card(context).SetText("Bing Images"));
             cards.Add(new Card(context).SetText(Resource.String.text_gesture_detector));
             cards.Add(new Card(context).SetText(Resource.String.text_theming));
             return cards;
@@ -82,10 +88,14 @@ namespace F2S.Glass.ApiDemo
                     break;
 
                 case 1:
-                    StartActivity(new Intent(this, typeof (SelectGestureDemoActivity)));
+                    StartActivity(new Intent(this, typeof (BingImagesActivity)));
                     break;
 
                 case 2:
+                    StartActivity(new Intent(this, typeof(SelectGestureDemoActivity)));
+                    break;
+
+                case 3:
                     StartActivity(new Intent(this, typeof (ThemingActivity)));
                     break;
 

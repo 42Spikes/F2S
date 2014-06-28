@@ -134,7 +134,10 @@ namespace F2S.Glass.ApiDemo
 			public const int finger_trace_2 = 2130837512;
 			
 			// aapt resource value: 0x7f020009
-			public const int Icon = 2130837513;
+			public const int happy_kitty_header = 2130837513;
+			
+			// aapt resource value: 0x7f02000a
+			public const int Icon = 2130837514;
 			
 			static Drawable()
 			{

@@ -27,6 +27,7 @@ namespace F2S.MvvmX.Samples.Unified.Glass
     {
         public App()
         {
+//            Mvx.Register(new F2S.MvvmX.Samples.Unified.Glass.Plugins.TextToSpeech.TextToSpeech());
         }
 
         public override void Initialize()
@@ -60,13 +61,15 @@ namespace F2S.MvvmX.Samples.Unified.Glass
             base.doInitialNavigation();
 
             var presenter = Mvx.Resolve<IMvxPresenter>();
-            //presenter.ShowViewModel<CompassViewModel>(this);
+            presenter.ShowViewModel<CompassViewModel>(this);
+            /*
             var parms = new Dictionary<string, string>()
             {
                 {"Text", "Hi"},
                 {"Footer", "There"}
             };
             presenter.ShowViewModel<MainViewModel>(this, parms);
+             * */
         }
     }
 

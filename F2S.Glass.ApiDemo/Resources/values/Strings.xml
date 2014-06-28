@@ -5,7 +5,7 @@
     <string name="text_cards">Card API examples</string>
     <string name="text_gesture_detector">GestureDetector API examples</string>
     <string name="text_theming">Theming examples</string>
-    <string name="glass_voice_trigger">do a demo</string>
+    <string name="glass_voice_trigger">show bleu</string>
 
     <string name="last_gesture">Last gesture</string>
     <string name="finger_count">Finger count</string>

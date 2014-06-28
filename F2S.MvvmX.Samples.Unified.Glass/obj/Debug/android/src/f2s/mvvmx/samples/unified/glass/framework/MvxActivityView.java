@@ -11,6 +11,11 @@ public class MvxActivityView
 		__md_methods = 
 			"n_onCreate:(Landroid/os/Bundle;)V:GetOnCreate_Landroid_os_Bundle_Handler\n" +
 			"n_onDestroy:()V:GetOnDestroyHandler\n" +
+			"n_onStart:()V:GetOnStartHandler\n" +
+			"n_onStop:()V:GetOnStopHandler\n" +
+			"n_onPause:()V:GetOnPauseHandler\n" +
+			"n_onResume:()V:GetOnResumeHandler\n" +
+			"n_onRestart:()V:GetOnRestartHandler\n" +
 			"";
 		mono.android.Runtime.register ("F2S.MvvmX.Samples.Unified.Glass.Framework.MvxActivityView, F2S.MvvmX.Samples.Unified.Glass, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null", MvxActivityView.class, __md_methods);
 	}
@@ -38,6 +43,46 @@ public class MvxActivityView
 	}
 
 	private native void n_onDestroy ();
+
+
+	public void onStart ()
+	{
+		n_onStart ();
+	}
+
+	private native void n_onStart ();
+
+
+	public void onStop ()
+	{
+		n_onStop ();
+	}
+
+	private native void n_onStop ();
+
+
+	public void onPause ()
+	{
+		n_onPause ();
+	}
+
+	private native void n_onPause ();
+
+
+	public void onResume ()
+	{
+		n_onResume ();
+	}
+
+	private native void n_onResume ();
+
+
+	public void onRestart ()
+	{
+		n_onRestart ();
+	}
+
+	private native void n_onRestart ();
 
 	java.util.ArrayList refList;
 	public void monodroidAddReference (java.lang.Object obj)

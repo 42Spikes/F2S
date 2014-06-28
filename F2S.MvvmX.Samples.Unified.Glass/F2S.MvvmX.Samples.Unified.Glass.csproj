@@ -57,6 +57,7 @@
     <Compile Include="Components\Compass\CompassRenderer.cs" />
     <Compile Include="Components\Compass\Menus\CompassMenuActivity.cs" />
     <Compile Include="Components\Compass\Model\Landmarks.cs" />
+    <Compile Include="Components\Compass\Model\Location.cs" />
     <Compile Include="Components\Compass\Model\Place.cs" />
     <Compile Include="Components\Compass\OrientationManager.cs" />
     <Compile Include="Components\Compass\Services\CompassServiceBinder.cs" />
@@ -69,6 +70,7 @@
     <Compile Include="Framework\IMvxNavigable.cs" />
     <Compile Include="Framework\IMvxServiceAttachable.cs" />
     <Compile Include="Framework\IMvxStaticCardView.cs" />
+    <Compile Include="Framework\MvxContainerExtensions.cs" />
     <Compile Include="Framework\MvxGlassDirectRenderingCallbackTarget.cs" />
     <Compile Include="Framework\MvxGlassViewModelAnnotator.cs" />
     <Compile Include="Framework\MvxMenuActivity.cs" />
@@ -84,6 +86,7 @@
     <Compile Include="Plugins\TextToSpeech\ITextToSpeech.cs" />
     <Compile Include="Plugins\TextToSpeech\TextToSpeech.cs" />
     <Compile Include="Services\UnifiedCompositeService.cs" />
+    <Compile Include="TinyMessenger.cs" />
     <Compile Include="ViewModels\MainViewModel.cs" />
     <Compile Include="Views\MainActivityView.cs" />
     <Compile Include="App.cs" />
@@ -112,7 +115,9 @@
     </AndroidResource>
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\values\Strings.xml" />
+    <AndroidResource Include="Resources\values\Strings.xml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\drawable\Icon.png" />
