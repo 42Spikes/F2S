@@ -2,7 +2,7 @@ package f2s.mvvmx.samples.unified.glass.components.compass.services;
 
 
 public class CompassService
-	extends f2s.mvvmx.samples.unified.glass.framework.MvxService
+	extends f2s.tinymvx.glass.MvxAndroidService
 	implements
 		mono.android.IGCUserPeer
 {

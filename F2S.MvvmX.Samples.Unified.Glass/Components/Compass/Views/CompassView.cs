@@ -13,7 +13,7 @@ using Android.Util;
 using Android.Views;
 using Android.Views.Animations;
 using Android.Widget;
-using F2S.MvvmX.Samples.Unified.Glass.Framework;
+using F2S.TinyMvx;
 using Java.Text;
 using Java.Util;
 using F2S.MvvmX.Samples.Unified.Glass.Components.Compass.Utils;

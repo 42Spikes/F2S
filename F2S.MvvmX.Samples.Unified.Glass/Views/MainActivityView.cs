@@ -11,9 +11,10 @@ using Android.Runtime;
 using Android.Views;
 using Android.Widget;
 using F2S.MvvmX.Samples.Unified.Glass.Components.Compass.Services;
-using F2S.MvvmX.Samples.Unified.Glass.Framework;
+using F2S.TinyMvx;
 using F2S.MvvmX.Samples.Unified.Glass.Services;
 using F2S.MvvmX.Samples.Unified.Glass.ViewModels;
+using F2S.TinyMvx.Glass;
 
 namespace F2S.MvvmX.Samples.Unified.Glass.Activities
 {

@@ -11,13 +11,14 @@ using Android.Views;
 using Android.Widget;
 using F2S.MvvmX.Samples.Unified.Glass.Components.Compass.Model;
 using F2S.MvvmX.Samples.Unified.Glass.Components.Compass.Utils;
-using F2S.MvvmX.Samples.Unified.Glass.Framework;
+using F2S.TinyMvx;
 using F2S.MvvmX.Samples.Unified.Glass.Plugins.TextToSpeech;
+using F2S.TinyMvx.Glass;
 
 namespace F2S.MvvmX.Samples.Unified.Glass.Components.Compass.Services
 {
     [Service]
-    public class CompassService : MvxService, IMvxNavigable
+    public class CompassService : MvxAndroidService, IMvxNavigable
     {
         private OrientationManager _orientationManager;
         public OrientationManager OrientationManager
@@ -69,6 +70,12 @@ namespace F2S.MvvmX.Samples.Unified.Glass.Components.Compass.Services
             _landmarks = null;
 
             base.OnDestroy();
+        }
+
+
+        public void ShowViewModel(object parameters = null)
+        {
+            throw new NotImplementedException();
         }
     }
 }

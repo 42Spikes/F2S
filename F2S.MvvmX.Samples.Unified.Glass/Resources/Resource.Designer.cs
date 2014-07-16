@@ -26,6 +26,8 @@ namespace F2S.MvvmX.Samples.Unified.Glass
 		
 		public static void UpdateIdValues()
 		{
+			global::F2S.TinyMvx.Glass.Resource.String.ApplicationName = global::F2S.MvvmX.Samples.Unified.Glass.Resource.String.ApplicationName;
+			global::F2S.TinyMvx.Glass.Resource.String.Hello = global::F2S.MvvmX.Samples.Unified.Glass.Resource.String.Hello;
 		}
 		
 		public partial class Array
@@ -63,8 +65,8 @@ namespace F2S.MvvmX.Samples.Unified.Glass
 		public partial class Dimension
 		{
 			
-			// aapt resource value: 0x7f060000
-			public const int card_margin = 2131099648;
+			// aapt resource value: 0x7f070000
+			public const int card_margin = 2131165184;
 			
 			static Dimension()
 			{
@@ -186,32 +188,35 @@ namespace F2S.MvvmX.Samples.Unified.Glass
 		public partial class String
 		{
 			
-			// aapt resource value: 0x7f070000
-			public const int ApplicationName = 2131165184;
+			// aapt resource value: 0x7f060001
+			public const int ApplicationName = 2131099649;
 			
-			// aapt resource value: 0x7f070001
-			public const int glass_voice_trigger = 2131165185;
+			// aapt resource value: 0x7f060000
+			public const int Hello = 2131099648;
 			
-			// aapt resource value: 0x7f070006
-			public const int magnetic_interference = 2131165190;
+			// aapt resource value: 0x7f060002
+			public const int glass_voice_trigger = 2131099650;
 			
-			// aapt resource value: 0x7f070005
-			public const int pitch_too_steep = 2131165189;
+			// aapt resource value: 0x7f060007
+			public const int magnetic_interference = 2131099655;
 			
-			// aapt resource value: 0x7f070004
-			public const int place_text_format = 2131165188;
+			// aapt resource value: 0x7f060006
+			public const int pitch_too_steep = 2131099654;
 			
-			// aapt resource value: 0x7f070007
-			public const int read_aloud = 2131165191;
+			// aapt resource value: 0x7f060005
+			public const int place_text_format = 2131099653;
 			
-			// aapt resource value: 0x7f070002
-			public const int spoken_heading_format = 2131165186;
+			// aapt resource value: 0x7f060008
+			public const int read_aloud = 2131099656;
 			
-			// aapt resource value: 0x7f070003
-			public const int spoken_heading_format_one = 2131165187;
+			// aapt resource value: 0x7f060003
+			public const int spoken_heading_format = 2131099651;
 			
-			// aapt resource value: 0x7f070008
-			public const int stop = 2131165192;
+			// aapt resource value: 0x7f060004
+			public const int spoken_heading_format_one = 2131099652;
+			
+			// aapt resource value: 0x7f060009
+			public const int stop = 2131099657;
 			
 			static String()
 			{

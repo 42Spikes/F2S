@@ -15,7 +15,7 @@ using Android.Widget;
 using F2S.MvvmX.Samples.Unified.Glass.Components.Compass.Model;
 using F2S.MvvmX.Samples.Unified.Glass.Components.Compass.Services;
 using F2S.MvvmX.Samples.Unified.Glass.Components.Compass.Views;
-using F2S.MvvmX.Samples.Unified.Glass.Framework;
+using F2S.TinyMvx;
 
 namespace F2S.MvvmX.Samples.Unified.Glass.Components.Compass
 {
@@ -53,13 +53,13 @@ namespace F2S.MvvmX.Samples.Unified.Glass.Components.Compass
 
         private OnChangedListener _onChangedListener;
 
-        public CompassRenderer(MvxService service) : base(service)
+        public CompassRenderer(IMvxService service) : base(service)
         {
             try
             {
                 _onChangedListener = new OnChangedListener(this);
 
-                var inflater = LayoutInflater.From(service);
+                var inflater = LayoutInflater.From((Service)service);
                 _layout = (FrameLayout)inflater.Inflate(Resource.Layout.compass, null);
                 _layout.SetWillNotDraw(false);
 

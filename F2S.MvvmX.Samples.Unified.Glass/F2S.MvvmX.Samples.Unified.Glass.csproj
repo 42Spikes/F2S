@@ -65,23 +65,7 @@
     <Compile Include="Components\Compass\Utils\MathUtils.cs" />
     <Compile Include="Components\Compass\Utils\SensorExtensions.cs" />
     <Compile Include="Components\UnifiedPresenter.cs" />
-    <Compile Include="Framework\IMvxMessage.cs" />
-    <Compile Include="Framework\IMvxMessenger.cs" />
-    <Compile Include="Framework\IMvxNavigable.cs" />
-    <Compile Include="Framework\IMvxServiceAttachable.cs" />
-    <Compile Include="Framework\IMvxStaticCardView.cs" />
-    <Compile Include="Framework\MvxContainerExtensions.cs" />
-    <Compile Include="Framework\MvxGlassDirectRenderingCallbackTarget.cs" />
-    <Compile Include="Framework\MvxGlassViewModelAnnotator.cs" />
-    <Compile Include="Framework\MvxMenuActivity.cs" />
-    <Compile Include="Framework\MvxMessage.cs" />
-    <Compile Include="Framework\MvxMessageBasedPresenter.cs" />
-    <Compile Include="Framework\MvxMessenger.cs" />
     <Compile Include="Components\Compass\OnChangedListener.cs" />
-    <Compile Include="Framework\MvxServiceRunner.cs" />
-    <Compile Include="Framework\MvxServicesStartedMessage.cs" />
-    <Compile Include="Framework\MvxShowViewModelMessage.cs" />
-    <Compile Include="Framework\ViewFirstAttribute.cs" />
     <Compile Include="Plugins\Orientation\Orientation.cs" />
     <Compile Include="Plugins\TextToSpeech\ITextToSpeech.cs" />
     <Compile Include="Plugins\TextToSpeech\TextToSpeech.cs" />
@@ -92,18 +76,8 @@
     <Compile Include="App.cs" />
     <Compile Include="Components\Compass\ViewModels\CompassViewModel.cs" />
     <Compile Include="Components\Compass\Views\CompassView.cs" />
-    <Compile Include="Framework\MvxGlassCardPresenter.cs" />
-    <Compile Include="Framework\Mvx.cs" />
-    <Compile Include="Framework\MvxApplication.cs" />
-    <Compile Include="Framework\MvxComposableService.cs" />
-    <Compile Include="Framework\MvxPresenter.cs" />
-    <Compile Include="Framework\MvxService.cs" />
-    <Compile Include="Framework\MvxView.cs" />
-    <Compile Include="Framework\MvxViewLocator.cs" />
-    <Compile Include="Framework\MvxViewModel.cs" />
     <Compile Include="Resources\Resource.Designer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="TinyIoC.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
@@ -142,6 +116,12 @@
       <Visible>False</Visible>
       <Version>1.8.1</Version>
     </XamarinComponentReference>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\F2S.TinyMvx.Glass\F2S.TinyMvx.Glass.csproj">
+      <Project>{eb59e855-3246-487f-afe2-f2e7dabb4e15}</Project>
+      <Name>F2S.TinyMvx.Glass</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

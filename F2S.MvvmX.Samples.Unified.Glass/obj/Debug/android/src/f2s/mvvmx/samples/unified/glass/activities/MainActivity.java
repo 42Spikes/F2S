@@ -2,7 +2,7 @@ package f2s.mvvmx.samples.unified.glass.activities;
 
 
 public class MainActivity
-	extends f2s.mvvmx.samples.unified.glass.framework.MvxActivityView_1
+	extends f2s.tinymvx.glass.MvxActivityView_1
 	implements
 		mono.android.IGCUserPeer
 {

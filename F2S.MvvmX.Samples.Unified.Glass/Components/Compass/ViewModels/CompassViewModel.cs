@@ -9,7 +9,7 @@ using Android.OS;
 using Android.Runtime;
 using Android.Views;
 using Android.Widget;
-using F2S.MvvmX.Samples.Unified.Glass.Framework;
+using F2S.TinyMvx;
 
 namespace F2S.MvvmX.Samples.Unified.Glass.Components.Compass.ViewModels
 {

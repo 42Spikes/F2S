@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="Hello">Minimal Remote View</string>
+    <string name="ApplicationName">F2S.Glass.Spikes.Minimal.RemoveView</string>
+    <string name="stop">Stop</string>
+</resources>

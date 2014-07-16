@@ -11,23 +11,23 @@ using Android.Views;
 using Android.Widget;
 using F2S.MvvmX.Samples.Unified.Glass.Components.Compass;
 using F2S.MvvmX.Samples.Unified.Glass.Components.Compass.Services;
-using F2S.MvvmX.Samples.Unified.Glass.Framework;
+using F2S.TinyMvx;
 using F2S.MvvmX.Samples.Unified.Glass.Services;
 using F2S.MvvmX.Samples.Unified.Glass.Plugins.TextToSpeech;
 using F2S.MvvmX.Samples.Unified.Glass.Components.Compass.ViewModels;
 using F2S.MvvmX.Samples.Unified.Glass.Components;
 using F2S.MvvmX.Samples.Unified.Glass.ViewModels;
+using F2S.TinyMvx.Glass;
 
 namespace F2S.MvvmX.Samples.Unified.Glass
 {
     public class App : 
-        MvxApplication<
+        MvxGlassApplication<
             UnifiedPresenter,
             UnifiedCompositeService>
     {
         public App()
         {
-//            Mvx.Register(new F2S.MvvmX.Samples.Unified.Glass.Plugins.TextToSpeech.TextToSpeech());
         }
 
         public override void Initialize()
@@ -80,8 +80,9 @@ namespace F2S.MvvmX.Samples.Unified.Glass
         {
         }
     }
-
-    public class MainViewModelAnnotation : MvxStaticCardAnnotation<MainViewModel>
+    /*
+    public class MainViewModelAnnotation : MvxGlassStaticCardAnnotation<MainViewModel>
     {
     }
+     * */
 }
