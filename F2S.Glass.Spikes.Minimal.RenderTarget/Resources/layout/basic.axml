@@ -9,8 +9,8 @@
         android:layout_height="match_parent"
         android:layout_gravity="center"
         android:layout_marginTop="-10px"
-        android:textSize="160px"
+        android:textSize="80px"
         android:gravity="center"
-        android:text="HI"
-        android:background="@color/blue" />
+        android:text=""
+        android:background="@android:color/transparent" />
 </FrameLayout>

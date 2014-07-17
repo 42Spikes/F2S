@@ -2,7 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-
+using System.Threading.Tasks;
 using Android.App;
 using Android.Content;
 using Android.Glass.Timeline;
@@ -21,23 +21,24 @@ namespace F2S.Glass.Spikes.Minimal.RenderTarget
     public class MainService : Service
     {
         private LiveCard _card;
-        private LiveCardRenderer _renderer;
+        private GlassDirectRenderingTarget _renderer;
+        private BasicView _view;
 
         public override IBinder OnBind(Intent intent)
         {
             return null;
         }
 
-        private Handler _handler;
         public override StartCommandResult OnStartCommand(Intent intent, StartCommandFlags flags, int startId)
         {
             if (_card == null)
             {
-                _handler = new Handler();
+                _view = new BasicView(this, "HIIIIIIIIIII");
 
                 _card = new LiveCard(this, "theCard");
 
-                _renderer = new LiveCardRenderer(this);
+//                _renderer = new LocalDirectRenderer(this, new BasicView(this, "FuBar2"), c => render(c)); //, canvas => render3(canvas));
+                _renderer = new GlassDirectRenderingTarget(_view); //, canvas => render3(canvas));
                 _card.SetDirectRenderingEnabled(true).SurfaceHolder.AddCallback(_renderer);
 
                 var mi = new Intent(this, typeof(MenuActivity));
@@ -48,8 +49,6 @@ namespace F2S.Glass.Spikes.Minimal.RenderTarget
                 _card.Publish(LiveCard.PublishMode.Reveal);
 
                 _renderer.start();
-
-                //_handler.PostDelayed(() => render2(), 1000);
             }
             else
             {
@@ -62,6 +61,12 @@ namespace F2S.Glass.Spikes.Minimal.RenderTarget
 
         public override void OnDestroy()
         {
+            if (_renderer != null)
+            {
+                _renderer.stop();
+                _renderer = null;
+            }
+
             if (_card != null && _card.IsPublished)
             {
                 _card.Unpublish();
@@ -71,48 +76,21 @@ namespace F2S.Glass.Spikes.Minimal.RenderTarget
             base.OnDestroy();
         }
 
-        private void render()
-        {
-            /*
-            Canvas canvas;
-            try
-            {
-                canvas = _renderer.SurfaceHolder.LockCanvas();
-            }
-            catch (Exception)
-            {
-                return;
-            }
+        /*
+        private Paint _textPaint = new Paint() { Color = Color.White, TextSize = 32 };
 
-            if (canvas != null)
-            {
-                _view.Draw(canvas);
-                _renderer.SurfaceHolder.UnlockCanvasAndPost(canvas);
-            }
-             * */
-        }
-        private void render2()
+        private void render3(Canvas canvas)
         {
-            /*
-            Canvas canvas;
-            try
-            {
-                canvas = _renderer.SurfaceHolder.LockCanvas();
-                if (canvas != null)
-                {
-                    _view.Draw(canvas);
-                    _renderer.SurfaceHolder.UnlockCanvasAndPost(canvas);
-                }
-            }
-            catch (Exception)
-            {
-                return;
-            }
-            finally
-            {
-                _handler.PostDelayed(() => render2(), 1000);
-            }
-             * */
+            //_view.Draw(canvas);            
+            canvas.DrawRGB(0x00, 0x00, 0xff);
+            canvas.DrawText("HI!", 50, 50, _textPaint);
+
         }
+
+        private void render(Canvas c)
+        {
+            _view.Draw(c);
+        }
+        */
     }
 }

@@ -15,7 +15,10 @@ namespace F2S.Glass.Spikes.Minimal.RenderTarget
     [Activity(Theme = "@style/MenuTheme")]
     public class MenuActivity : Activity
     {
-
+        public MenuActivity()
+        {
+            
+        }
         public override void OnAttachedToWindow()
         {
             base.OnAttachedToWindow();

@@ -63,19 +63,34 @@ namespace F2S.Glass.Spikes.Stopwatch
 		{
 			
 			// aapt resource value: 0x7f020000
-			public const int ic_colon = 2130837504;
+			public const int bleu1 = 2130837504;
 			
 			// aapt resource value: 0x7f020001
-			public const int ic_interpunc = 2130837505;
+			public const int bleu2 = 2130837505;
 			
 			// aapt resource value: 0x7f020002
-			public const int ic_lap = 2130837506;
+			public const int bleu3 = 2130837506;
 			
 			// aapt resource value: 0x7f020003
-			public const int ic_stop = 2130837507;
+			public const int bleu4 = 2130837507;
 			
 			// aapt resource value: 0x7f020004
-			public const int Icon = 2130837508;
+			public const int bleu5 = 2130837508;
+			
+			// aapt resource value: 0x7f020005
+			public const int ic_colon = 2130837509;
+			
+			// aapt resource value: 0x7f020006
+			public const int ic_interpunc = 2130837510;
+			
+			// aapt resource value: 0x7f020007
+			public const int ic_lap = 2130837511;
+			
+			// aapt resource value: 0x7f020008
+			public const int ic_stop = 2130837512;
+			
+			// aapt resource value: 0x7f020009
+			public const int Icon = 2130837513;
 			
 			static Drawable()
 			{

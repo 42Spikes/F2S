@@ -86,6 +86,11 @@
     <AndroidResource Include="Resources\layout\card_countdown.axml" />
     <AndroidResource Include="Resources\xml\voice_trigger_start.xml" />
     <AndroidResource Include="Resources\values\strings.xml" />
+    <AndroidResource Include="Resources\drawable\bleu1.png" />
+    <AndroidResource Include="Resources\drawable\bleu2.png" />
+    <AndroidResource Include="Resources\drawable\bleu3.png" />
+    <AndroidResource Include="Resources\drawable\bleu4.png" />
+    <AndroidResource Include="Resources\drawable\bleu5.png" />
   </ItemGroup>
   <ItemGroup>
     <XamarinComponentReference Include="googleglass">
